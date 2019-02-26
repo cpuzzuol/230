@@ -1,0 +1,39 @@
+<?php
+$uri = $_SERVER['REQUEST_URI'];
+
+$uriParts = explode("/", $uri);
+$chapter = $uriParts[count($uriParts) -1];
+$chapterJs = substr($chapter, 0, strpos($chapter, '.')) . ".js"; // used in footer
+$chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
+?>
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>230 Test Your Knowledge <?php echo $chapter ? "&mdash; Chapter $chapterNum" : ""; ?></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+
+  <!-- VUETIFY CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <v-app id="app">
+    <v-navigation-drawer app></v-navigation-drawer>
+    <v-toolbar app></v-toolbar>
+    <v-content>
+      <v-container>
+
+
+

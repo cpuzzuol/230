@@ -1,0 +1,19 @@
+<?php
+include_once 'header.phtml';
+?>
+<v-layout row wrap>
+  <v-flex xs12>
+      You have {{ totalPoints }} points.
+      <question
+        v-for="(question, index) in chapterData"
+        :question="question"
+        :key="index"
+        :progress="progress"
+        @guessed="checkAnswer"
+      ></question>
+    </div>
+  </v-flex>
+</v-layout>
+<?php
+include_once 'footer.phtml';
+?>

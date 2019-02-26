@@ -1,0 +1,162 @@
+        </v-container>
+      </v-content>
+    <v-footer app></v-footer>
+  </v-app>
+  <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <script src="assets/js/<?php echo $chapterJs; ?>"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+  <!-- MathJAX -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <!-- VUEJS development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- VUETIFY JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/x-template" id="question-template">
+    <div class="question-container">
+      <p>
+        {{ ($vnode.key + 1) + ') ' + question.question }} &mdash;
+        <span v-if="progress[$vnode.key].attempts < 2 && !progress[$vnode.key].completed">Attempt {{ progress[$vnode.key].attempts + 1 }}/2</span>
+        <span v-else>{{ progress[$vnode.key].points }} points</span>
+      </p>
+      <template v-for="(choice, index) in question.choices">
+        <input
+            type="radio"
+            :id="'question-' + $vnode.key + '-' + index"
+            :value="index"
+            v-model="questionRadio"
+            @change="questionGuessed"
+            :disabled="progress[$vnode.key].completed"
+        >
+        <label :for="'question-' + $vnode.key + '-' + index">{{ choiceLetter(index) + ') ' + choice }}</label>
+        <br>
+      </template>
+      <p v-if="progress[$vnode.key].completed">The answer is {{ choiceLetter(question.answerIndex) }}</p>
+    </div>
+  </script>
+  <script>
+    Vue.component('question', {
+      props: ['question', 'progress'],
+      template: '#question-template',
+      data() {
+        return {
+          questionRadio: null
+        }
+      },
+      methods: {
+        choiceLetter(index){
+          switch (index) {
+            case 0:
+              return 'a'
+            case 1:
+              return 'b'
+            case 2:
+              return 'c'
+            case 3:
+              return 'd'
+            default:
+              return ''
+          }
+        },
+        questionGuessed() {
+          this.$emit('guessed', {questionNumber: (this.$vnode.key + 1), choiceIndex: this.questionRadio})
+        }
+      }
+    })
+
+    var app = new Vue({
+      el: '#app',
+      created() {
+        this.chapterData = chapterData // bind chapter questions to Vue instance (INCLUDED IN INDIVIDUAL CHAPTER FILES)
+      },
+      data: {
+        chapterData: null,
+        progress: [
+          {
+            number: 1,
+            attempts: 0,
+            completed: false,
+            points: 0
+          },
+          {
+            number: 2,
+            attempts: 0,
+            completed: false,
+            points: 0
+          },
+          {
+            number: 3,
+            attempts: 0,
+            completed: false,
+            points: 0
+          },
+          {
+            number: 4,
+            attempts: 0,
+            completed: false,
+            points: 0
+          },
+          {
+            number: 5,
+            attempts: 0,
+            completed: false,
+            points: 0
+          }
+        ]
+
+      },
+      computed: {
+        totalPoints() {
+          return this.progress[0].points + this.progress[1].points + this.progress[2].points + this.progress[3].points + this.progress[4].points;
+        }
+      },
+      methods: {
+        // When a user selects an answer in the question component, check if it's right or wrong
+        checkAnswer(answerData) {
+          var questionNumber = answerData.questionNumber
+          var choiceIndex = answerData.choiceIndex
+
+          var question = this.chapterData.find(question => { return question.number == questionNumber})
+          if(choiceIndex == question.answerIndex){
+            alert("You got it!")
+            if(this.progress[questionNumber - 1].attempts == 0){
+              this.progress[questionNumber - 1].points = 20
+            } else if (this.progress[questionNumber - 1].attempts == 1) {
+              this.progress[questionNumber - 1].points = 10
+            }
+            this.progress[questionNumber - 1].completed = true
+
+          } else {
+            alert("Try again!")
+            if(this.progress[questionNumber - 1].attempts == 0) {
+              this.progress[questionNumber - 1].attempts++
+            } else if (this.progress[questionNumber - 1].attempts == 1) {
+              this.progress[questionNumber - 1].attempts++
+              this.progress[questionNumber - 1].completed = true
+            }
+          }
+        }
+      }
+    })
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--  <script>-->
+<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')-->
+<!--  </script>-->
+<!--  <script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+</body>
+
+</html>
