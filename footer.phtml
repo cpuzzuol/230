@@ -1,3 +1,24 @@
+          <?php
+          if($chapterNum):
+            ?>
+            <v-layout row wrap>
+              <v-flex xs12 text-xs-center>
+                <v-btn
+                    flat
+                    color="info darken-2"
+                    href="
+                    <?php
+                      echo 'chapter' . ($chapterNum-1) . '.phtml';
+                    ?>
+                          "
+                >
+                  <v-icon>replay</v-icon> Redo this chapter
+                </v-btn>
+              </v-flex>
+            </v-layout>
+          <?php
+          endif;
+          ?>
         </v-container>
       </v-content>
     <v-footer app></v-footer>
@@ -24,34 +45,129 @@
   <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
   <script src="assets/js/main.js"></script>
   <script type="text/x-template" id="question-template">
-    <div class="question-container">
-      <p>
-        {{ ($vnode.key + 1) + ') ' + question.question }} &mdash;
-        <span v-if="progress[$vnode.key].attempts < 2 && !progress[$vnode.key].completed">Attempt {{ progress[$vnode.key].attempts + 1 }}/2</span>
-        <span v-else>{{ progress[$vnode.key].points }} points</span>
-      </p>
-      <template v-for="(choice, index) in question.choices">
-        <input
-            type="radio"
-            :id="'question-' + $vnode.key + '-' + index"
-            :value="index"
-            v-model="questionRadio"
-            @change="questionGuessed"
-            :disabled="progress[$vnode.key].completed"
-        >
-        <label :for="'question-' + $vnode.key + '-' + index">{{ choiceLetter(index) + ') ' + choice }}</label>
-        <br>
-      </template>
-      <p v-if="progress[$vnode.key].completed">The answer is {{ choiceLetter(question.answerIndex) }}</p>
-    </div>
+    <v-layout app>
+      <v-flex xs12 sm12 md8 offset-md2>
+        <v-card class="mb-3">
+          <v-card-title primary-title class="headline">
+            <div>
+              {{ ($vnode.key + 1) + ') ' + question.question }}
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <v-alert
+                :value="showIncorrectAlert"
+                type="error"
+            >
+              Sorry, that is incorrect.
+              <span v-if="progress[$vnode.key].attempts == 1 && !progress[$vnode.key].forfeited"> Try again.</span>
+              <span v-if="progress[$vnode.key].attempts == 2 || progress[$vnode.key].forfeited"> The correct answer is <strong>({{ choiceLetter(question.answerIndex) }})</strong>.</span>
+              <v-btn v-if="progress[$vnode.key].attempts == 1 && !showSolutionContainer" color="info darken-3" small @click="showSolutionDialog = true">Show solution?</v-btn>
+              <v-btn v-if="progress[$vnode.key].attempts == 2 && !showSolutionContainer" color="info darken-3" small @click="showSolutionContainer = true">Show solution?</v-btn>
+            </v-alert>
+            <v-alert
+                :value="showCorrectAlert"
+                type="success"
+            >
+              YES! The correct answer is <strong>({{ choiceLetter(question.answerIndex) }})</strong>.
+              <v-btn v-if="!showSolutionContainer" color="info darken-3" small @click="showSolutionContainer = true">Show solution?</v-btn>
+            </v-alert>
+            <v-radio-group v-model="questionRadio" :mandatory="false">
+              <v-radio
+                  v-for="(choice, index) in question.choices"
+                  :key="'question-' + $vnode.key + '-' + index"
+                  :label="choiceLetter(index) + ') ' + choice"
+                  :value="index"
+                  :disabled="progress[$vnode.key].guesses.includes(index) || progress[$vnode.key].forfeited || progress[$vnode.key].completed"
+              >
+              </v-radio>
+            </v-radio-group>
+          </v-card-text>
+          <v-img
+              pl-5
+              v-if="showSolutionContainer"
+              :src="'./assets/img/solutions/ch' + chapterNum + '/' + chapterNum + '-' + question.number + '.png'"
+              contain
+              lazy-src
+              :alt="'An explanation showing why the answer is option ' + choiceLetter(question.answerIndex) + ' to question ' + ($vnode.key + 1) + ' (which is question number ' + question.number + ' in chapter ' + chapterNum + ' of the textbook).'"
+          ></v-img>
+          <v-divider></v-divider>
+          <v-card-actions>
+            <template v-if="!progress[$vnode.key].completed && !progress[$vnode.key].forfeited">
+              <v-chip v-if="!progress[$vnode.key].forfeited" label outline color="blue-grey">Attempt {{ progress[$vnode.key].attempts + 1 }}/2</v-chip>
+              <v-spacer></v-spacer>
+              <v-btn
+                  color="orange"
+                  class="white--text"
+                  @click="questionGuessed"
+                  :disabled="typeof questionRadio != 'number' || progress[$vnode.key].guesses.includes(questionRadio)"
+              >
+                Check Answer
+              </v-btn>
+            </template>
+            <template v-else>
+              <v-chip color="blue-grey" class="white--text">{{ progress[$vnode.key].points }}/20 points</v-chip>
+              <template v-if="progress[$vnode.key].forfeited">
+                <v-spacer></v-spacer>
+                <v-chip label outline color="error">Forfeit!</v-chip>
+              </template>
+            </template>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+
+      <v-dialog
+          v-model="showSolutionDialog"
+          width="320"
+      >
+        <v-card>
+          <v-card-title
+              class="headline warning lighten-2"
+              primary-title
+          >
+            Show solution?
+          </v-card-title>
+          <v-card-text>
+            By showing this solution you will automatically receive <strong>0 points</strong> for this answer!
+          </v-card-text>
+          <v-divider></v-divider>
+          <v-card-actions>
+            <v-btn
+                color="primary"
+                flat
+                @click="showSolutionDialog = false"
+            >
+              No thanks
+            </v-btn>
+            <v-spacer></v-spacer>
+            <v-btn
+                color="primary"
+                flat
+                @click="questionForfeited"
+            >
+              I accept
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </v-layout>
   </script>
   <script>
     Vue.component('question', {
-      props: ['question', 'progress'],
+      props: ['question', 'progress', 'chapterNum'],
       template: '#question-template',
       data() {
         return {
-          questionRadio: null
+          questionRadio: null,
+          showSolutionContainer: false,
+          showSolutionDialog: false
+        }
+      },
+      computed: {
+        showCorrectAlert(){
+          return this.progress[this.$vnode.key].points > 0
+        },
+        showIncorrectAlert(){
+          return this.progress[this.$vnode.key].attempts > 0 && this.progress[this.$vnode.key].points == 0
         }
       },
       methods: {
@@ -69,8 +185,13 @@
               return ''
           }
         },
+        questionForfeited() {
+          this.showSolutionDialog = false
+          this.showSolutionContainer = true
+          this.$emit('forfeited', this.$vnode.key)
+        },
         questionGuessed() {
-          this.$emit('guessed', {questionNumber: (this.$vnode.key + 1), choiceIndex: this.questionRadio})
+          this.$emit('guessed', {questionNumber: this.question.number, questionIndex: this.$vnode.key, choiceIndex: this.questionRadio})
         }
       }
     })
@@ -79,42 +200,62 @@
       el: '#app',
       created() {
         this.chapterData = chapterData // bind chapter questions to Vue instance (INCLUDED IN INDIVIDUAL CHAPTER FILES)
+
+        // generate random question numbers with the upper limit being the number of questions in this chapter
+        while(this.randomizedQuestions.length < 5){
+          var q = Math.floor(Math.random()* this.chapterData.length) + 1
+          // if this question isn't already in the list of questions, add it
+          if(this.randomizedQuestions.indexOf(this.chapterData[q-1]) === -1) {
+            this.randomizedQuestions.push(this.chapterData[q-1])
+          }
+        }
       },
       data: {
-        chapterData: null,
+        chapterData: null, // all the questions from the js file
+        drawer: false,
         progress: [
           {
             number: 1,
             attempts: 0,
             completed: false,
-            points: 0
+            forfeited: false,
+            points: 0,
+            guesses: [] // the indexes that have already been guessed
           },
           {
             number: 2,
             attempts: 0,
             completed: false,
-            points: 0
+            forfeited: false,
+            points: 0,
+            guesses: []
           },
           {
             number: 3,
             attempts: 0,
             completed: false,
-            points: 0
+            forfeited: false,
+            points: 0,
+            guesses: []
           },
           {
             number: 4,
             attempts: 0,
             completed: false,
-            points: 0
+            forfeited: false,
+            points: 0,
+            guesses: []
           },
           {
             number: 5,
             attempts: 0,
             completed: false,
-            points: 0
+            forfeited: false,
+            points: 0,
+            guesses: []
           }
-        ]
-
+        ],
+        randomizedQuestions: [] // the random questions that will be used by the quiz
       },
       computed: {
         totalPoints() {
@@ -125,27 +266,30 @@
         // When a user selects an answer in the question component, check if it's right or wrong
         checkAnswer(answerData) {
           var questionNumber = answerData.questionNumber
+          var questionIndex = answerData.questionIndex
           var choiceIndex = answerData.choiceIndex
 
-          var question = this.chapterData.find(question => { return question.number == questionNumber})
+          var question = this.randomizedQuestions.find(question => { return question.number == questionNumber})
           if(choiceIndex == question.answerIndex){
-            alert("You got it!")
-            if(this.progress[questionNumber - 1].attempts == 0){
-              this.progress[questionNumber - 1].points = 20
-            } else if (this.progress[questionNumber - 1].attempts == 1) {
-              this.progress[questionNumber - 1].points = 10
+            if(this.progress[questionIndex].attempts == 0){
+              this.progress[questionIndex].points = 20
+            } else if (this.progress[questionIndex].attempts == 1) {
+              this.progress[questionIndex].points = 10
             }
-            this.progress[questionNumber - 1].completed = true
+            this.progress[questionIndex].completed = true
 
           } else {
-            alert("Try again!")
-            if(this.progress[questionNumber - 1].attempts == 0) {
-              this.progress[questionNumber - 1].attempts++
-            } else if (this.progress[questionNumber - 1].attempts == 1) {
-              this.progress[questionNumber - 1].attempts++
-              this.progress[questionNumber - 1].completed = true
+            if(this.progress[questionIndex].attempts == 0) {
+              this.progress[questionIndex].attempts++
+            } else if (this.progress[questionIndex].attempts == 1) {
+              this.progress[questionIndex].attempts++
+              this.progress[questionIndex].completed = true
             }
           }
+          this.progress[questionIndex].guesses.push(choiceIndex)
+        },
+        forfeitQuestion(questionIndex){
+          this.progress[questionIndex].forfeited = true
         }
       }
     })

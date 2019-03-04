@@ -1,0 +1,12 @@
+.v-card__title--primary{
+    background-color: #1565C0;
+    color: #ffffff;
+}
+.current-chapter{
+    font-size: 1.2rem;
+    padding: 0 2.7rem 0 2.5rem;
+}
+
+.score-bug{
+    background-color: #E3F2FD;
+}

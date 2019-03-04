@@ -30,10 +30,118 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
 <body>
 
   <v-app id="app">
-    <v-navigation-drawer app></v-navigation-drawer>
-    <v-toolbar app></v-toolbar>
-    <v-content>
-      <v-container>
+    <v-navigation-drawer
+        app
+        v-model="drawer"
+        class="primary"
+        dark
+        temporary
+    >
+      <v-toolbar flat class="primary darken-1">
+        <v-list class="pa-0">
+          <v-list-tile>
+            <v-list-tile-content>
+              <v-list-tile-title>230 Quiz List</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-toolbar>
+      <v-list
+        v-for="index in 13"
+        :key="'drawer-link-' + index"
+      >
+        <v-list-tile :href="'chapter' + index + '.phtml'">
+          <v-list-tile-action>
+            <v-icon>book</v-icon>
+          </v-list-tile-action>
 
+          <v-list-tile-content>
+            <v-list-tile-title>Chapter {{ index }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar
+        app
+        class="blue"
+        dark
+    >
+      <v-toolbar-side-icon @click="drawer ? drawer = false : drawer = true"></v-toolbar-side-icon>
+      <v-toolbar-title>Chapter <?php echo $chapterNum; ?></v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-menu offset-y>
+        <template v-slot:activator="{ on }">
+          <v-btn color="red darken-2" dark v-on="on">
+            Score: {{ totalPoints }}/100 points
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-tile
+              v-for="(question, index) in progress"
+              :key="'score-bug-' + index"
+          >
+            <v-list-tile-title>Q{{ (index + 1) + ') ' + question.points }}/20</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+    <v-content>
+      <v-container grid-list-sm>
+        <?php
+          if($chapterNum):
+        ?>
+        <v-layout row wrap>
+          <v-flex xs12 text-xs-center>
+            <v-btn
+                flat
+                color="info darken-2"
+                href="
+                <?php
+                  if($chapterNum == 1){
+                    echo 'index.phtml';
+                  } else {
+                    echo 'chapter' . ($chapterNum-1) . '.phtml';
+                  }
+                ?>
+                "
+            >
+              <v-icon>keyboard_arrow_left</v-icon>
+              <?php
+              if($chapterNum == 1){
+                echo 'Quiz Homepage';
+              } else {
+                echo 'Chapter ' . ($chapterNum-1);
+              }
+              ?>
+
+            </v-btn>
+            <span class="current-chapter"><strong>Chapter <?php echo $chapterNum; ?></strong></span>
+            <v-btn
+                flat
+                right
+                color="info darken-2"
+                href="
+                <?php
+                if($chapterNum == 13){
+                  echo 'index.phtml';
+                } else {
+                  echo 'chapter' . ($chapterNum+1) . '.phtml';
+                }
+                ?>
+                "
+            >
+              <?php
+              if($chapterNum == 13){
+                echo 'Quiz Homepage';
+              } else {
+                echo 'Chapter ' . ($chapterNum+1);
+              }
+              ?> <v-icon>keyboard_arrow_right</v-icon>
+            </v-btn>
+          </v-flex>
+        </v-layout>
+        <?php
+          endif;
+        ?>
 
 

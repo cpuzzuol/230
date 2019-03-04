@@ -3,13 +3,14 @@ include_once 'header.phtml';
 ?>
 <v-layout row wrap>
   <v-flex xs12>
-      You have {{ totalPoints }} points.
       <question
-        v-for="(question, index) in chapterData"
+        v-for="(question, index) in randomizedQuestions"
         :question="question"
         :key="index"
         :progress="progress"
+        chapter-num="1"
         @guessed="checkAnswer"
+        @forfeited="forfeitQuestion"
       ></question>
     </div>
   </v-flex>
