@@ -8,7 +8,7 @@
                     color="info darken-2"
                     href="
                     <?php
-                      echo 'chapter' . ($chapterNum-1) . '.phtml';
+                      echo 'chapter' . ($chapterNum) . '.phtml';
                     ?>
                           "
                 >
@@ -48,9 +48,9 @@
     <v-layout app>
       <v-flex xs12 sm12 md8 offset-md2>
         <v-card class="mb-3">
-          <v-card-title primary-title class="headline">
+          <v-card-title primary-title>
             <div>
-              {{ ($vnode.key + 1) + ') ' + question.question }}
+              {{ ($vnode.key + 1) + ') ' }} <span v-html="question.question"></span>
             </div>
           </v-card-title>
           <v-card-text>
@@ -71,6 +71,13 @@
               YES! The correct answer is <strong>({{ choiceLetter(question.answerIndex) }})</strong>.
               <v-btn v-if="!showSolutionContainer" color="info darken-3" small @click="showSolutionContainer = true">Show solution?</v-btn>
             </v-alert>
+            <v-img
+                v-if="question.questionImg"
+                :src="'./assets/img/questions/ch' + chapterNum + '/' + chapterNum + '-' + question.number + '.png'"
+                contain
+                lazy-src
+                :alt="'A supplemental image for question ' + ($vnode.key + 1) + ' (which is question number ' + question.number + ' in chapter ' + chapterNum + ' of the textbook).'"
+            ></v-img>
             <v-radio-group v-model="questionRadio" :mandatory="false">
               <v-radio
                   v-for="(choice, index) in question.choices"

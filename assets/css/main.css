@@ -1,6 +1,7 @@
 .v-card__title--primary{
     background-color: #1565C0;
     color: #ffffff;
+    font-size: 1.3rem;
 }
 .current-chapter{
     font-size: 1.2rem;
@@ -10,3 +11,9 @@
 .score-bug{
     background-color: #E3F2FD;
 }
+
+.mjx-chtml{
+    padding: 1px 5px !important;
+}
+
+[v-cloak] {display: none}

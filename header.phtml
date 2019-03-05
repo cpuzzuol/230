@@ -29,7 +29,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
 
 <body>
 
-  <v-app id="app">
+  <v-app id="app" v-cloak>
     <v-navigation-drawer
         app
         v-model="drawer"
