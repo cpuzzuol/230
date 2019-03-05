@@ -271,7 +271,7 @@ var chapterData = [
     number: 20,
     type: 'multiple',
     question: 'The height profile of a water wave created by a wave generator is given by\n\n' +
-      '$$y(x) = 6e^{−0.2x} cos(8px)$ meters$$,' +
+      '$$y(x) = 6e^{−0.2x} cos(8px) meters,$$' +
       'What is the wavelength of the wave?',
     questionImg: null,
     choices: [
