@@ -2,6 +2,7 @@ var chapterData = [
   {
     number: 1,
     type: 'multiple',
+    topic: 'Point Charge',
     question: 'The electric field <strong>E</strong> at a distance $R$ from a negative electric charge:',
     questionImg: null,
     choices: [
@@ -16,6 +17,7 @@ var chapterData = [
   {
     number: 2,
     type: 'multiple',
+    topic: 'Electric Force',
     question: 'The electric force acting on a charge at a distance $R$ from another charge of the same polarity:',
     questionImg: null,
     choices: [
@@ -30,6 +32,7 @@ var chapterData = [
   {
     number: 3,
     type: 'multiple',
+    topic: 'Steady Current',
     question: 'A steady current $I$:',
     questionImg: null,
     choices: [
@@ -44,6 +47,7 @@ var chapterData = [
   {
     number: 4,
     type: 'multiple',
+    topic: 'Electric and Magnetic Fields',
     question: 'Electric fields are induced by electric charges and magnetic fields are induced by electric currents. Only one of the following four statements is true. Which one?',
     questionImg: null,
     choices: [
@@ -58,6 +62,7 @@ var chapterData = [
   {
     number: 5,
     type: 'multiple',
+    topic: 'Acoustic Wave',
     question: 'A 2.8 kHz acoustic wave travels in water at a speed of 1.4 km/s.What is the wave\'s wavelength?',
     questionImg: null,
     choices: [
@@ -72,6 +77,7 @@ var chapterData = [
   {
     number: 6,
     type: 'multiple',
+    topic: 'Lead/Lag',
     question: 'Does the red wave phase-lead or phase-lag the blue wave and by how much?',
     questionImg: 'ch1/1-6.png',
     choices: [
@@ -86,6 +92,7 @@ var chapterData = [
   {
     number: 7,
     type: 'multiple',
+    topic: 'Time Shift',
     question: 'If $\\phi =\\pi/4$ and $T = 16s$, what is $\\Delta t$?',
     questionImg: 'ch1/1-7.png',
     choices: [
@@ -100,7 +107,8 @@ var chapterData = [
   {
     number: 8,
     type: 'multiple',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 3e^{−0.4x}cos(4\\pi x) meters,$$' +
+    topic: 'Traveling Wave',
+    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 3e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
       'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.6 m$?',
     questionImg: null,
     choices: [
@@ -115,7 +123,8 @@ var chapterData = [
   {
     number: 9,
     type: 'multiple',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 4e^{−0.4x}cos(4\\pi x) meters,$$' +
+    topic: 'Traveling Wave',
+    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 4e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
       'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.8 m$?',
     questionImg: null,
     choices: [
@@ -130,6 +139,7 @@ var chapterData = [
   {
     number: 10,
     type: 'multiple',
+    topic: 'EM Spectrum',
     question: 'The visible part of the EM spectrum covers the wavelength range:',
     questionImg: null,
     choices: [
@@ -144,6 +154,7 @@ var chapterData = [
   {
     number: 11,
     type: 'multiple',
+    topic: 'Mobile Phone Bands',
     question: 'Most mobile-phone communication channels operate in:',
     questionImg: null,
     choices: [
@@ -158,13 +169,14 @@ var chapterData = [
   {
     number: 12,
     type: 'multiple',
+    topic: 'Complex Numbers',
     question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1/V_2$?',
     questionImg: null,
     choices: [
-      '$V_1/V_2 = 4 −53^\\circ$',
-      '$V_1/V_2 = 4 53^\\circ$',
-      '$V_1/V_2 = 2 106^\\circ$',
-      '$V_1/V_2 = 2 −106^\\circ$'
+      '$V_1/V_2 = 4 \\angle −53^\\circ$',
+      '$V_1/V_2 = 4 \\angle 53^\\circ$',
+      '$V_1/V_2 = 2 \\angle 106^\\circ$',
+      '$V_1/V_2 = 2 \\angle −106^\\circ$'
     ],
     answerIndex: 3,
     explanation: 'ch1/1-12.png'
@@ -172,13 +184,14 @@ var chapterData = [
   {
     number: 13,
     type: 'multiple',
+    topic: 'Complex Numbers',
     question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1V_2^*$?',
     questionImg: null,
     choices: [
-      '$V_1V_2^* = 50 0^\\circ$',
-      '$V_1V_2^* = 25 0^\\circ$',
-      '$V_1V_2^* = 50 −106^\\circ$',
-      '$V_1V_2^* = 25 106^\\circ$'
+      '$V_1V_2^* = 50 \\angle 0^\\circ$',
+      '$V_1V_2^* = 25 \\angle 0^\\circ$',
+      '$V_1V_2^* = 50 \\angle −106^\\circ$',
+      '$V_1V_2^* = 25 \\angle 106^\\circ$'
     ],
     answerIndex: 2,
     explanation: 'ch1/1-13.png'
@@ -186,13 +199,14 @@ var chapterData = [
   {
     number: 14,
     type: 'multiple',
+    topic: 'Complex Numbers',
     question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1V_2$?',
     questionImg: null,
     choices: [
-      '$V_1V_2 = 50 0^\\circ$',
-      '$V_1V_2 = 25 0^\\circ$',
-      '$V_1V_2 = 50 −106^\\circ$',
-      '$V_1V_2 = 25 106^\\circ$'
+      '$V_1V_2 = 50 \\angle 0^\\circ$',
+      '$V_1V_2 = 25 \\angle 0^\\circ$',
+      '$V_1V_2 = 50 \\angle −106^\\circ$',
+      '$V_1V_2 = 25 \\angle 106^\\circ$'
     ],
     answerIndex: 0,
     explanation: 'ch1/1-14.png'
@@ -200,6 +214,7 @@ var chapterData = [
   {
     number: 15,
     type: 'multiple',
+    topic: 'Complex Algebra',
     question: 'Given $z = 2 −0.5 rad$, determine ln ${\\bf z}$.',
     questionImg: null,
     choices: [
@@ -214,6 +229,7 @@ var chapterData = [
   {
     number: 16,
     type: 'multiple',
+    topic: 'Phasors',
     question: 'The phasor equivalent of the time function $\\nu (t) = 10sin(\\omega t +45^\\circ)$ is:',
     questionImg: null,
     choices: [
@@ -228,6 +244,7 @@ var chapterData = [
   {
     number: 17,
     type: 'multiple',
+    topic: 'Phasors',
     question: 'The phasor equivalent of the time function $\\nu (t) = −4cos(\\omega t −30^\\circ)$ is:',
     questionImg: null,
     choices: [
@@ -242,6 +259,7 @@ var chapterData = [
   {
     number: 18,
     type: 'multiple',
+    topic: 'Phasors',
     question: 'For an ac voltage at an angular frequency $\\omega$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = −5e^{j30^\\circ}$ is:',
     questionImg: null,
     choices: [
@@ -256,6 +274,7 @@ var chapterData = [
   {
     number: 19,
     type: 'multiple',
+    topic: 'Phasors',
     question: 'For an ac voltage at an angular frequency $\\omega = 377 rad/s$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
     questionImg: null,
     choices: [
@@ -270,8 +289,9 @@ var chapterData = [
   {
     number: 20,
     type: 'multiple',
-    question: 'The height profile of a water wave created by a wave generator is given by\n\n' +
-      '$$y(x) = 6e^{−0.2x} cos(8px) meters,$$' +
+    topic: 'Traveling Wave',
+    question: 'The height profile of a water wave created by a wave generator is given by' +
+      '$$y(x) = 6e^{−0.2x} cos(8px) \\mbox{ meters,}$$' +
       'What is the wavelength of the wave?',
     questionImg: null,
     choices: [

@@ -50,7 +50,7 @@
         <v-card class="mb-3">
           <v-card-title primary-title>
             <div>
-              {{ ($vnode.key + 1) + ') ' }} <span v-html="question.question"></span>
+              {{ ($vnode.key + 1) + ') ' }} <span v-html="question.topic"></span>
             </div>
           </v-card-title>
           <v-card-text>
@@ -71,6 +71,7 @@
               YES! The correct answer is <strong>({{ choiceLetter(question.answerIndex) }})</strong>.
               <v-btn v-if="!showSolutionContainer" color="info darken-3" small @click="showSolutionContainer = true">Show solution?</v-btn>
             </v-alert>
+            <p class="subheading" v-html="question.question"></p>
             <v-img
                 v-if="question.questionImg"
                 :src="'./assets/img/questions/ch' + chapterNum + '/' + chapterNum + '-' + question.number + '.png'"
