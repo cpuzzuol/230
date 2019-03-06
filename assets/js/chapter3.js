@@ -1,30 +1,31 @@
 var chapterData = [
+  /*
   {
     number: 1,
     type: 'multiple',
     topic: 'Commutative Vector Operations',
-    question: 'The electric field <strong>E</strong> at a distance $R$ from a negative electric charge:',
+    question: 'For two vectors <strong>A</strong> and <strong>B</strong>, which one of the following statements is true?',
     questionImg: null,
     choices: [
-      'Decreases in magnitude as $1/R^2$ and points away from the charge.',
-      'Decreases in magnitude as $1/R$ and points away from the charge.',
-      'Decreases in magnitude as $1/R^2$ and points towards the charge.',
-      'Decreases in magnitude as $1/R$ and points towards the charge.'
+      'A·B is commutative, as is A×B.',
+      'A·B is commutative, but A×B is not.',
+      'A·B is not commutative, but A×B is.',
+      'Neither A·B nor A×B is commutative.'
     ],
-    answerIndex: 1, // choices[2]
+    answerIndex: 1, // choices[1]
     explanation: 'ch3/3-1.png'
   },
   {
     number: 2,
     type: 'multiple',
     topic: 'Cross Product',
-    question: 'The electric force acting on a charge at a distance $R$ from another charge of the same polarity:',
+    question: 'For the vector operation <strong>C = A×B</strong>, which one of the following statements is true?',
     questionImg: null,
     choices: [
-      'Is attractive and varies as $1/R$.',
-      'Is repulsive and varies as $1/R^2$.',
-      'Is repulsive and varies as $1/R$.',
-      'Is attractive and varies as $1/R^2$.'
+      'The direction of C lies in the plane containing A and B and obeys the righthand rule.',
+      'The direction of C lies in the plane containing A and B and obeys the lefthand rule.',
+      'The direction of C is orthogonal to the plane containing A and B and obeys the right-hand rule.',
+      'The direction of C is orthogonal to the plane containing A and B and obeys the left-hand rule.'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-2.png'
@@ -33,13 +34,13 @@ var chapterData = [
     number: 3,
     type: 'multiple',
     topic: 'Meaningful Products',
-    question: 'A steady current $I$:',
+    question: 'Only one of the following four statements is a meaningful product. Which one?',
     questionImg: null,
     choices: [
-      'Induces an electric field, but not a magnetic field.',
-      'Induces a magnetic field, but not an electric field.',
-      'Induces neither an electric field nor a magnetic field.',
-      'Induces both an electric field and a magnetic field.'
+      'A·(B·C)',
+      'A×(B·C)',
+      'A(B×C)',
+      'A(B·C)'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-3.png'
@@ -48,13 +49,13 @@ var chapterData = [
     number: 4,
     type: 'multiple',
     topic: 'Differential Length',
-    question: 'Electric fields are induced by electric charges and magnetic fields are induced by electric currents. Only one of the following four statements is true. Which one?',
+    question: 'Of the following four definitions for the differential length $d \\bf{l}$ in cylindrical coordinates, only one is correct. Which one?',
     questionImg: null,
     choices: [
-      'Electric and magnetic fields are always independent of one another because they are induced by different sources.',
-      'Electric and magnetic fields are always coupled, even when electric charges are stationary.',
-      'Electric and magnetic fields are always coupled, even when electric charges are moving at a constant velocity.',
-      'Electric and magnetic fields are coupled under time-varying conditions.'
+      '$d {\\bf {l}} = {\\bf \\hat{r}} rdr+ {\\bf \\hat{\\Phi}} r d \\phi +{\\bf \\widehat{z}} dz$',
+      '$d {\\bf {l}} = {\\bf \\hat{r}} dr+ {\\bf \\hat{\\Phi}} d \\phi +{\\bf \\widehat{z}} dz$',
+      '$d {\\bf {l}} = {\\bf \\hat{r}} dr+ {\\bf \\hat{\\Phi}} r d \\phi +{\\bf \\widehat{z}} dz$',
+      '$d {\\bf {l}} = {\\bf \\hat{r}} dr+ {\\bf \\hat{\\Phi}} r d \\phi +{\\bf \\widehat{z}} rdz$'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-4.png'
@@ -63,13 +64,13 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'Angle between Vectors',
-    question: 'A 2.8 kHz acoustic wave travels in water at a speed of 1.4 km/s.What is the wave\'s wavelength?',
+    question: 'Given vectors ${\\bf {A}} = {\\bf \\hat{x}} 3 − {\\bf \\hat{z}}4 \\mbox{ and } {\\bf {B}} = {\\bf \\hat{z}} 2$, what is the angle qAB between them?',
     questionImg: null,
     choices: [
-      '$\\lambda = 0.1 m$',
-      '$\\lambda = 0.25 m$',
-      '$\\lambda = 0.5 m$',
-      '$\\lambda = 2 m$'
+      '$\\theta_{AB} = 36.87^\\circ$',
+      '$\\theta_{AB} = 143.13^\\circ$',
+      '$\\theta_{AB} = −36.87^\\circ$',
+      '$\\theta_{AB} = −143.13^\\circ$'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-5.png'
@@ -78,13 +79,13 @@ var chapterData = [
     number: 6,
     type: 'multiple',
     topic: 'Gradient and Curl Operators',
-    question: 'Does the red wave phase-lead or phase-lag the blue wave and by how much?',
+    question: 'Only one of the following four statements is valid. Which one?',
     questionImg: null,
     choices: [
-      'Leads by $45^\\circ$',
-      'Leads by $90^\\circ$',
-      'Lags by $45^\\circ$',
-      'Lags by $90^\\circ$'
+      'The gradient can operate on only scalar fields while the curl can operate on only vector fields.',
+      'Both the gradient and the curl can operate on scalar fields.',
+      'Both the gradient and the curl can operate on vector fields.',
+      'The gradient can operate on only vector fields while the curl can operate on only scalar fields.'
     ],
     answerIndex: 0,
     explanation: 'ch3/3-6.png'
@@ -93,13 +94,13 @@ var chapterData = [
     number: 7,
     type: 'multiple',
     topic: 'Directional Derivative',
-    question: 'If $\\phi =\\pi/4$ and $T = 16s$, what is $\\Delta t$?',
+    question: 'For the scalar function $V = x2y−2z2$, determine its directional derivative along the ${\\bf \\hat{z}}$ direction and then evaluate it at $P = (1,2,3)$.',
     questionImg: null,
     choices: [
-      '$\\Delta t = 2s$',
-      '$\\Delta t = 4s$',
-      '$\\Delta t = 6s$',
-      '$\\Delta t = 8s$'
+      '$(dV/dl) |_{(1,2,3)} = 8$',
+      '$(dV/dl) |_{(1,2,3)} = -2$',
+      '$(dV/dl) |_{(1,2,3)} = 2$',
+      '$(dV/dl) |_{(1,2,3)} = -12$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-7.png'
@@ -108,14 +109,13 @@ var chapterData = [
     number: 8,
     type: 'multiple',
     topic: 'Directional Derivative',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 3e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
-      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.6 m$?',
+    question: 'For the scalar function $V = 5e^{−2r} sin \\phi$, determine its directional derivative along the ${\\bf \\hat{\\Phi}}$ direction and then evaluate it at $P = (0.5,\\pi/4,2)$.',
     questionImg: null,
     choices: [
-      '$4m$',
-      '$1.2m$',
-      '$0.6m$',
-      '$2m$'
+      '$(dV/dl) |_{(0.5,\\pi/4,2)} = 2.6$',
+      '$(dV/dl) |_{(0.5,\\pi/4,2)} = 1.3$',
+      '$(dV/dl) |_{(0.5,\\pi/4,2)} = -2.6$',
+      '$(dV/dl) |_{(0.5,\\pi/4,2)} = 0.3$'
     ],
     answerIndex: 0,
     explanation: 'ch3/3-8.png'
@@ -124,14 +124,13 @@ var chapterData = [
     number: 9,
     type: 'multiple',
     topic: 'Divergence',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 4e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
-      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.8 m$?',
+    question: 'Given vector ${\\bf {A}} = −{\\bf \\hat{x}} 2xy + {\\bf \\hat{y}} 2 y^2$, determine the divergence $\\triangledown · {\\bf {A}}$ at $P = (1,2)$.',
     questionImg: 'ch3/3-9.png',
     choices: [
-      '$4m$',
-      '$1.2m$',
-      '$0.6m$',
-      '$2m$'
+      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = 0$',
+      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = 2$',
+      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = 4$',
+      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = -2$',
     ],
     answerIndex: 2,
     explanation: 'ch3/3-9.png'
@@ -140,13 +139,13 @@ var chapterData = [
     number: 10,
     type: 'multiple',
     topic: 'Flux Out of a Cube',
-    question: 'The visible part of the EM spectrum covers the wavelength range:',
+    question: 'Given a vector field ${\\bf {A}} = {\\bf \\hat{x}} x$, determine the amount of flux flowing out of a cube centered at the origin with its sides extending between $−10 \\mbox{ and } +10$ along $x \\mbox{, } y \\mbox{, and } z$.',
     questionImg: 'ch3/3-10.png',
     choices: [
-      '1–4 μm',
-      '0.4–4 μm',
-      '0.4–0.7 μm',
-      '0.1–0.4 μm'
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = −2000$',
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 0$',
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 4000$',
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 8000$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-10.png'
@@ -155,13 +154,13 @@ var chapterData = [
     number: 11,
     type: 'multiple',
     topic: 'Flux Out of a Cube',
-    question: 'Most mobile-phone communication channels operate in:',
+    question: 'Given a vector field ${\\bf {A}} = {\\bf \\hat{x}} x$, determine the amount of flux flowing out of a cube centered at the origin with its sides extending between $−10 \\mbox{ and } +10$ along $x \\mbox{, } y \\mbox{, and } z$.',
     questionImg: 'ch3/3-11.png',
     choices: [
-      'the VHF band',
-      'the HF and VHF bands',
-      'the UHF and SHF bands',
-      'the EHF band'
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = −2000$',
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 8/3 \\times 10^5$',
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 4/3 \\times 10^5$',
+      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 2000$'
     ],
     answerIndex: 1,
     explanation: 'ch3/3-11.png'
@@ -170,28 +169,29 @@ var chapterData = [
     number: 12,
     type: 'multiple',
     topic: 'Conservation Vector',
-    question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1/V_2$?',
+    question: 'A vector field ${\\bf {A}}$ is said to be conservative if:',
     questionImg: null,
     choices: [
-      '$V_1/V_2 = 4 \\angle −53^\\circ$',
-      '$V_1/V_2 = 4 \\angle 53^\\circ$',
-      '$V_1/V_2 = 2 \\angle 106^\\circ$',
-      '$V_1/V_2 = 2 \\angle −106^\\circ$'
+      '${\\bf {\\triangledown · A}} = 0$',
+      '${\\bf {\\triangledown \\times A}} = 0$',
+      '${\\bf {\\triangledown · A}} = 0$ and ${\\bf {\\triangledown \\times A}} = 0$',
+      'None of the above'
     ],
     answerIndex: 1,
     explanation: 'ch3/3-12.png'
   },
+  */
   {
     number: 13,
     type: 'multiple',
     topic: 'Divergence',
-    question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1V_2^*$?',
+    question: 'At a given point is space, the divergence of a vector field ${\\bf {E}}$ is negative; that is, ${\\bf {\\triangledown · E}} < 0$. This means that the small volume surrounding that point in space is equivalent to:',
     questionImg: null,
     choices: [
-      '$V_1V_2^* = 50 \\angle 0^\\circ$',
-      '$V_1V_2^* = 25 \\angle 0^\\circ$',
-      '$V_1V_2^* = 50 \\angle −106^\\circ$',
-      '$V_1V_2^* = 25 \\angle 106^\\circ$'
+      'A sink of field lines.',
+      'A source of field lines.',
+      'Neither a sink nor a source.',
+      'A sink or a source.'
     ],
     answerIndex: 0,
     explanation: 'ch3/3-13.png'
@@ -200,13 +200,13 @@ var chapterData = [
     number: 14,
     type: 'multiple',
     topic: 'Divergence Theorem',
-    question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1V_2$?',
+    question: 'For a vector field ${\\bf {A}}$ defined over a volume $\\upsilon$ bounded by a surface $S$, the divergence theorem is given by:',
     questionImg: null,
     choices: [
-      '$V_1V_2 = 50 \\angle 0^\\circ$',
-      '$V_1V_2 = 25 \\angle 0^\\circ$',
-      '$V_1V_2 = 50 \\angle −106^\\circ$',
-      '$V_1V_2 = 25 \\angle 106^\\circ$'
+      '$\\int_\\upsilon \\triangledown · {\\bf {A}} d \\upsilon = \\oint_S ( {\\bf {\\triangledown \\times A}} ) · ds$',
+      '$\\oint_S {\\bf {A}} · ds = \\oint_\\upsilon | {\\bf {A}} | d \\upsilon$',
+      '$\\int_\\upsilon \\triangledown · {\\bf {A}} d \\upsilon = \\oint_S {\\bf {A}} · ds$',
+      '$\\int_S ( {\\bf {\\triangledown \\times A}} ) · ds = \\int | {\\bf {A}} | d \\upsilon$'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-14.png'
@@ -215,13 +215,13 @@ var chapterData = [
     number: 15,
     type: 'multiple',
     topic: 'Stokes\'s Theorem',
-    question: 'Given $z = 2 −0.5 rad$, determine ln ${\\bf z}$.',
+    question: 'For a vector field ${\\bf {B}}$ defined over a surface $S$ bounded by a contour $C$, Stokes\'s theorem states:',
     questionImg: null,
     choices: [
-      'ln ${\\bf z} = −j0.345$',
-      'ln ${\\bf z} = 0.69− j0.5$',
-      'ln ${\\bf z} = 2− j1$',
-      'ln ${\\bf z} = 0.69− j2$'
+      '$\\int_S {\\bf {B}} · ds = \\oint_C {\\bf {B}} · d \\ell$',
+      '$\\int_S {\\bf {\\triangledown}} · ds = \\oint_C {\\bf {B}} · d \\ell$',
+      '$\\int_S {\\bf {B}} · ds = \\oint_C ({\\bf {\\triangledown \\times B}}) · d \\ell$',
+      '$\\int_S ({\\bf {\\triangledown \\times B}}) · ds = \\oint_C {\\bf {B}} · d \\ell$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-15.png'
@@ -245,13 +245,13 @@ var chapterData = [
     number: 17,
     type: 'multiple',
     topic: 'Divergence',
-    question: 'The phasor equivalent of the time function $\\nu (t) = −4cos(\\omega t −30^\\circ)$ is:',
+    question: 'Compute the divergence of the vector field. $${\\bf {A}} = {\\bf \\hat{r}} {\\cos \\phi \\over r^2} + {\\bf {\\hat{\\Phi}}} {\\sin \\phi \\over r^2}$$',
     questionImg: null,
     choices: [
-      '$\\widetilde{V} = 4e^{−j150^\\circ}$',
-      '$\\widetilde{V} = 4e^{j150\\circ}$',
-      '$\\widetilde{V} = −4e^{j30\\circ}$',
-      '$\\widetilde{V} = −4e^{j150\\circ}$',
+      '${\\bf {\\triangledown · A}} = 0$',
+      '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^2}$',
+      '${\\bf {\\triangledown · A}} = -{2 \\cos \\phi \\over r^2}$',
+      '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^3}$',
     ],
     answerIndex: 0,
     explanation: 'ch3/3-17.png'
@@ -260,13 +260,13 @@ var chapterData = [
     number: 18,
     type: 'multiple',
     topic: 'Laplacian',
-    question: 'For an ac voltage at an angular frequency $\\omega$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = −5e^{j30^\\circ}$ is:',
+    question: 'Compute the Laplacian of the scalar function $$ V=x^2y+y^2z+y^2x$$',
     questionImg: null,
     choices: [
-      '$\\nu (t) = 5cos(\\omega t +150^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −30^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −150^\\circ)$',
-      '$\\nu (t) = −5cos(\\omega t +60^\\circ)$'
+      '$\\triangledown^2V = 0$',
+      '$\\triangledown^2V = x + z$',
+      '$\\triangledown^2V = y + z$',
+      '$\\triangledown^2V = 2(x+y+z)$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-18.png'
@@ -275,13 +275,13 @@ var chapterData = [
     number: 19,
     type: 'multiple',
     topic: 'Arrow Representation',
-    question: 'For an ac voltage at an angular frequency $\\omega = 377 rad/s$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
+    question: 'The arrow representation shown in the figure corresponds to the function:',
     questionImg: 'ch3/3-19.png',
     choices: [
-      '$\\nu (t) = 3cos(377t +30^\\circ)$',
-      '$\\nu (t) = 3cos(377t +150^\\circ)$',
-      '$\\nu (t) = −3cos(377t −30^\\circ)$',
-      '$\\nu (t) = −3sin(377t −120^\\circ)$'
+      '${\\bf {E}} = {\\bf \\hat{x}} y$',
+      '${\\bf {E}} = {\\bf \\hat{y}} x$',
+      '${\\bf {E}} = -{\\bf \\hat{x}} y$',
+      '${\\bf {E}} = -{\\bf \\hat{y}} x$'
     ],
     answerIndex: 1,
     explanation: 'ch3/3-19.png'
