@@ -1,5 +1,4 @@
 var chapterData = [
-  /*
   {
     number: 1,
     type: 'multiple',
@@ -180,7 +179,6 @@ var chapterData = [
     answerIndex: 1,
     explanation: 'ch3/3-12.png'
   },
-  */
   {
     number: 13,
     type: 'multiple',
@@ -251,7 +249,7 @@ var chapterData = [
       '${\\bf {\\triangledown · A}} = 0$',
       '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^2}$',
       '${\\bf {\\triangledown · A}} = -{2 \\cos \\phi \\over r^2}$',
-      '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^3}$',
+      '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^3}$'
     ],
     answerIndex: 0,
     explanation: 'ch3/3-17.png'

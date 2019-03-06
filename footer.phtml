@@ -33,7 +33,10 @@
 
   <!-- MathJAX -->
   <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      "HTML-CSS": { linebreaks: { automatic: true, width: "75% container" } },
+    });
   </script>
   <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -83,10 +86,12 @@
               <v-radio
                   v-for="(choice, index) in question.choices"
                   :key="'question-' + $vnode.key + '-' + index"
-                  :label="choiceLetter(index) + ') ' + choice"
                   :value="index"
                   :disabled="progress[$vnode.key].guesses.includes(index) || progress[$vnode.key].forfeited || progress[$vnode.key].completed"
               >
+                <template slot="label">
+                  <span v-html="choiceLetter(index) + ') ' + choice"></span>
+                </template>
               </v-radio>
             </v-radio-group>
           </v-card-text>

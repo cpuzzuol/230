@@ -1,15 +1,16 @@
 var chapterData = [
+  /*
   {
     number: 1,
     type: 'multiple',
     topic: 'Static Conditions',
-    question: 'The electric field <strong>E</strong> at a distance $R$ from a negative electric charge:',
+    question: 'In electromagnetics, under “static conditions” means that <strong>E</strong> and <strong>H</strong> in a given region of space do not vary with time, which is due to:',
     questionImg: null,
     choices: [
-      'Decreases in magnitude as $1/R^2$ and points away from the charge.',
-      'Decreases in magnitude as $1/R$ and points away from the charge.',
-      'Decreases in magnitude as $1/R^2$ and points towards the charge.',
-      'Decreases in magnitude as $1/R$ and points towards the charge.'
+      'all electrons being stationary (not moving).',
+      'the charge density\n\r' + '$\\rho_v \\mbox{ within every elemental volume } \\Delta \\upsilon$\n\r' + 'is constant with time and the current density\n\r' + '${\\bf {J}} \\mbox{ crossing the surface of } \\Delta \\upsilon \\mbox{ is zero.}$',
+      'both $\\rho_v$ and ${\\bf {J}}$ are constant with time.',
+      '$\\rho_v = 0$ and ${\\bf {J}} = 0$.'
     ],
     answerIndex: 2, // choices[2]
     explanation: 'ch4/4-1.png'
@@ -18,13 +19,13 @@ var chapterData = [
     number: 2,
     type: 'multiple',
     topic: 'Static and Dynamic Conditions',
-    question: 'The electric force acting on a charge at a distance $R$ from another charge of the same polarity:',
+    question: 'When computing electric and magnetic fields in a given region of space, under what circumstances do we have to consider both fields simultaneously?',
     questionImg: null,
     choices: [
-      'Is attractive and varies as $1/R$.',
-      'Is repulsive and varies as $1/R^2$.',
-      'Is repulsive and varies as $1/R$.',
-      'Is attractive and varies as $1/R^2$.'
+      'Never; we always should be able to compute E independently of H, and vice versa.',
+      'We have to consider <strong>E</strong> and <strong>H</strong> simultaneously if they point in the same direction.',
+      'Under static conditions.',
+      'Under dynamic conditions.'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-2.png'
@@ -33,13 +34,16 @@ var chapterData = [
     number: 3,
     type: 'multiple',
     topic: 'Electric Charge',
-    question: 'A steady current $I$:',
+    question: 'Consider 2 circular disks of electric charge:<br><br>' +
+      'Disk 1: $\\rho_{s_1} = \\rho_0r$ (linear variation with r)<br><br>' +
+      'Disk 2: $\\rho_{s_2} = \\rho_0r^2$ (quadratic variation with r)<br><br>' +
+      'Both disks have a radius of 1 m and $\\rho_0$ = constant. What is the ratio of the total amount of charge $Q_1$ on disk 1 to $Q_2$ on disk 2?',
     questionImg: null,
     choices: [
-      'Induces an electric field, but not a magnetic field.',
-      'Induces a magnetic field, but not an electric field.',
-      'Induces neither an electric field nor a magnetic field.',
-      'Induces both an electric field and a magnetic field.'
+      '$3 \\over 4$',
+      '$4 \\over 3$',
+      '$2$',
+      '$1 \\over 2$'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-3.png'
@@ -48,13 +52,16 @@ var chapterData = [
     number: 4,
     type: 'multiple',
     topic: 'Electric Charge',
-    question: 'Electric fields are induced by electric charges and magnetic fields are induced by electric currents. Only one of the following four statements is true. Which one?',
+    question: 'Consider 2 circular disks of electric charge:<br><br>' +
+      'Disk 1: $\\rho_{s_1} = \\rho_0r$ with radius $a_1 = 1 m$<br><br>' +
+      'Disk 2: $\\rho_{s_2} = \\rho_0r^2$ with radius $a_2 = \\mbox{ unknown }$<br><br>' +
+      'Here, $\\rho_0$ = constant. What should the value of $a_2$ be so that the two disks have the same amount of total charge?',
     questionImg: null,
     choices: [
-      'Electric and magnetic fields are always independent of one another because they are induced by different sources.',
-      'Electric and magnetic fields are always coupled, even when electric charges are stationary.',
-      'Electric and magnetic fields are always coupled, even when electric charges are moving at a constant velocity.',
-      'Electric and magnetic fields are coupled under time-varying conditions.'
+      '$a_2 = 1.075$',
+      '$a_2 = 0.75$',
+      '$a_2 = 0.79$',
+      '$a_2 = 1.33$'
     ],
     answerIndex: 0,
     explanation: 'ch4/4-4.png'
@@ -63,13 +70,13 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'Electric Charge',
-    question: 'A 2.8 kHz acoustic wave travels in water at a speed of 1.4 km/s.What is the wave\'s wavelength?',
+    question: 'Find the total charge contained in a cylindrical volume defined by $r \\leq 3 m$ and $0 \\leq z \\leq 2 m$ if $\\rho_v = 20rz ( \\mbox{m} C/ \\mbox{m}^3 )$.',
     questionImg: null,
     choices: [
-      '$\\lambda = 0.1 m$',
-      '$\\lambda = 0.25 m$',
-      '$\\lambda = 0.5 m$',
-      '$\\lambda = 2 m$'
+      '$Q = 0.4$ Coulomb',
+      '$Q = 0.8$ Coulomb',
+      '$Q = 1.13$ Coulomb',
+      '$Q = 2.26$ Coulomb'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-5.png'
@@ -78,13 +85,13 @@ var chapterData = [
     number: 6,
     type: 'multiple',
     topic: 'Electric Charge',
-    question: 'Does the red wave phase-lead or phase-lag the blue wave and by how much?',
+    question: 'If the line charge density is given by $\\rho_l = 12y^2 (\\mbox{mC/m})$, find the total charge distributed on the y axis from $y = −5$ to $y = 5$.',
     questionImg: null,
     choices: [
-      'Leads by $45^\\circ$',
-      'Leads by $90^\\circ$',
-      'Lags by $45^\\circ$',
-      'Lags by $90^\\circ$'
+      '$Q = 4 C$',
+      '$Q = 1 C$',
+      '$Q = 0.2 C$',
+      '$Q = 2 C$'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-6.png'
@@ -93,13 +100,15 @@ var chapterData = [
     number: 7,
     type: 'multiple',
     topic: 'Electric Charge',
-    question: 'If $\\phi =\\pi/4$ and $T = 16s$, what is $\\Delta t$?',
+    question: 'The charge density across the surface of a circular disk is given by\n' +
+      '$$\\rho_s = 2e^{−r} \\mbox { (C/m),}$$' +
+      'where $r$ is the radial distance from the center of the disk. The disk radius is 3 m. What is the total charge on the disk?',
     questionImg: null,
     choices: [
-      '$\\Delta t = 2s$',
-      '$\\Delta t = 4s$',
-      '$\\Delta t = 6s$',
-      '$\\Delta t = 8s$'
+      '$Q = 5.03 C$',
+      '$Q = 10.06 C$',
+      '$Q = 22.32 C$',
+      '$Q = 0.51 C$'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-7.png'
@@ -108,14 +117,13 @@ var chapterData = [
     number: 8,
     type: 'multiple',
     topic: 'Electric Current',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 3e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
-      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.6 m$?',
+    question: 'If the current density is given by ${\\bf {J}} = {\\bf \\hat{z}} 3xz$, what is the total current flowing through a square with corners at (0,0,0), (2,0,0), (2,0,2), and (0,0,2)?',
     questionImg: null,
     choices: [
-      '$4m$',
-      '$1.2m$',
-      '$0.6m$',
-      '$2m$'
+      '$I = 0$',
+      '$I = 4 A$',
+      '$I = 2 A$',
+      '$I = 16 A$'
     ],
     answerIndex: 0,
     explanation: 'ch4/4-8.png'
@@ -124,14 +132,13 @@ var chapterData = [
     number: 9,
     type: 'multiple',
     topic: 'Electric Field',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 4e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
-      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.8 m$?',
+    question: 'The ring of charge shown in the figure is situated in the x–y plane and carries a uniform line charge density $\\rho_\\ell = −2 \\mbox{ (C/m)}$. What is the direction of the induced electric field at a point along the upper part of the $z$ axis?',
     questionImg: 'ch4/4-9.png',
     choices: [
-      '$4m$',
-      '$1.2m$',
-      '$0.6m$',
-      '$2m$'
+      '${\\bf {E}} = 0$ everywhere along $z$ axis.',
+      '${\\bf {E}}$ direction is undefined.',
+      '${\\bf {E}}$ direction along $−{\\bf {\\hat{z}}}$.',
+      '${\\bf {E}}$ direction along $+{\\bf {\\hat{z}}}$.'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-9.png'
@@ -140,13 +147,13 @@ var chapterData = [
     number: 10,
     type: 'multiple',
     topic: 'Electric Field',
-    question: 'The visible part of the EM spectrum covers the wavelength range:',
+    question: 'The ring of charge shown in the figure is situated in the x–y plane and carries a uniform line charge density $\\rho_\\ell = −2 \\mbox{ (C/m)}$. What is the direction of ${\\bf {E}}$ at the origin?',
     questionImg: 'ch4/4-10.png',
     choices: [
-      '1–4 μm',
-      '0.4–4 μm',
-      '0.4–0.7 μm',
-      '0.1–0.4 μm'
+      'Along $−{\\bf {\\hat{z}}}$',
+      'Irrelevant, because ${\\bf {E}} = 0$ at the origin',
+      'Along $+{\\bf {\\hat{z}}}$',
+      'Along ${\\bf {\\hat{r}}}$, the radial direction away from the origin.'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-10.png'
@@ -155,13 +162,13 @@ var chapterData = [
     number: 11,
     type: 'multiple',
     topic: 'Electric Field',
-    question: 'Most mobile-phone communication channels operate in:',
+    question: 'For a very long wire coincident with the $z$ axis and containing electrons, what is the direction of ${\\bf {E}}$ at a distance $r$ from the wire?',
     questionImg: 'ch4/4-11.png',
     choices: [
-      'the VHF band',
-      'the HF and VHF bands',
-      'the UHF and SHF bands',
-      'the EHF band'
+      'Along ${\\bf {\\hat{r}}}$',
+      'Along $+{\\bf {\\hat{z}}}$',
+      'Along $-{\\bf {\\hat{z}}}$',
+      'Along $-{\\bf {\\hat{r}}}$'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-11.png'
@@ -170,13 +177,13 @@ var chapterData = [
     number: 12,
     type: 'multiple',
     topic: 'Electric Potential',
-    question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1/V_2$?',
+    question: 'Only one of the following four statements is totally correct. Which one?',
     questionImg: null,
     choices: [
-      '$V_1/V_2 = 4 \\angle −53^\\circ$',
-      '$V_1/V_2 = 4 \\angle 53^\\circ$',
-      '$V_1/V_2 = 2 \\angle 106^\\circ$',
-      '$V_1/V_2 = 2 \\angle −106^\\circ$'
+      'Electric potential difference and voltage difference are fundamentally the same quantity.',
+      'Electric potential difference applies to charges, whereas voltage applies to circuits, so they are totally different.',
+      'Electric potential difference becomes equivalent to voltage, but only if the charges are stationary.',
+      'None of the above three statements is correct.'
     ],
     answerIndex: 0,
     explanation: 'ch4/4-12.png'
@@ -185,13 +192,13 @@ var chapterData = [
     number: 13,
     type: 'multiple',
     topic: 'Electric Flux Density',
-    question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1V_2^*$?',
+    question: 'In a given region of space, the electric flux density is given by ${\\bf {D}} = {\\bf {\\hat{x}}}xz^2$. What is the corresponding volume charge density at (0,0,2)?',
     questionImg: null,
     choices: [
-      '$V_1V_2^* = 50 \\angle 0^\\circ$',
-      '$V_1V_2^* = 25 \\angle 0^\\circ$',
-      '$V_1V_2^* = 50 \\angle −106^\\circ$',
-      '$V_1V_2^* = 25 \\angle 106^\\circ$'
+      '$\\rho_v = 0$',
+      '$\\rho_v = −2 \\mbox{ (C/m3)}$',
+      '$\\rho_v = 4 \\mbox{ (C/m3)}$',
+      '$\\rho_v = 6 \\mbox{ (C/m3)}$'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-13.png'
@@ -200,13 +207,15 @@ var chapterData = [
     number: 14,
     type: 'multiple',
     topic: 'Electric Flux Density',
-    question: 'Given that $V_1 = 6− j8$ and $V_2 = 3+ j4$, what is $V_1V_2$?',
+    question: 'The electric flux density inside a dielectric sphere of radius $a = 2 \\mbox{ m}$ and centered at the origin is given by\n' +
+      '$${\\bf {D}} = {\\bf {\\hat{R}}}5R^2 \\mbox{ (C/} m^2 \\mbox{).}$$' +
+      'What is the volume charge density at $r = a$?',
     questionImg: null,
     choices: [
-      '$V_1V_2 = 50 \\angle 0^\\circ$',
-      '$V_1V_2 = 25 \\angle 0^\\circ$',
-      '$V_1V_2 = 50 \\angle −106^\\circ$',
-      '$V_1V_2 = 25 \\angle 106^\\circ$'
+      '$\\rho_v = 150$ (C/m<sup>3</sup>)',
+      '$\\rho_v = 40$ (C/m<sup>3</sup>)',
+      '$\\rho_v = 15$ (C/m<sup>3</sup>)',
+      '$\\rho_v = 60$ (C/m<sup>3</sup>)'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-14.png'
@@ -215,13 +224,13 @@ var chapterData = [
     number: 15,
     type: 'multiple',
     topic: 'Electric Field',
-    question: 'Given $z = 2 −0.5 rad$, determine ln ${\\bf z}$.',
+    question: 'For the electric dipole shown in the figure, what is the direction of ${\\bf {E}}$ at a distance $r$ from the midpoint of the dipole?',
     questionImg: 'ch4/4-15.png',
     choices: [
-      'ln ${\\bf z} = −j0.345$',
-      'ln ${\\bf z} = 0.69− j0.5$',
-      'ln ${\\bf z} = 2− j1$',
-      'ln ${\\bf z} = 0.69− j2$'
+      'Along $+{\\bf {\\hat{z}}}$',
+      'Along ${\\bf {\\hat{y}}}$',
+      'Along $-{\\bf {\\hat{z}}}$',
+      'Along ${\\bf {\\hat{x}}}$'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-15.png'
@@ -230,28 +239,29 @@ var chapterData = [
     number: 16,
     type: 'multiple',
     topic: 'Electrical Conductivity',
-    question: 'The phasor equivalent of the time function $\\nu (t) = 10sin(\\omega t +45^\\circ)$ is:',
+    question: 'Copper is a good conductor and mica is a good insulator. The conductivity of copper relative to that of mica is on the order of:',
     questionImg: null,
     choices: [
-      '$\\widetilde{V} = 10e^{−j45^\\circ}$',
-      '$\\widetilde{V} = 10e^{j45^\\circ}$',
-      '$\\widetilde{V} = 10e^{−j135^\\circ}$',
-      '$\\widetilde{V} = 10e^{j135^\\circ}$'
+      '10<sup>23</sup>',
+      '10<sup>6</sup>',
+      '100',
+      '10'
     ],
     answerIndex: 0,
     explanation: 'ch4/4-16.png'
   },
+  */
   {
     number: 17,
     type: 'multiple',
     topic: 'Piezoresistor',
-    question: 'The phasor equivalent of the time function $\\nu (t) = −4cos(\\omega t −30^\\circ)$ is:',
+    question: 'How does a piezoresistor function as a sensor?',
     questionImg: null,
     choices: [
-      '$\\widetilde{V} = 4e^{−j150^\\circ}$',
-      '$\\widetilde{V} = 4e^{j150\\circ}$',
-      '$\\widetilde{V} = −4e^{j30\\circ}$',
-      '$\\widetilde{V} = −4e^{j150\\circ}$',
+      'It is used to measure temperature.',
+      'Its resistance depends on the current flowing through it.',
+      'It functions like a fuse.',
+      'Its resistance changes if it gets stretched or compressed.'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-17.png'
@@ -260,13 +270,13 @@ var chapterData = [
     number: 18,
     type: 'multiple',
     topic: 'Voltage Breakdown',
-    question: 'For an ac voltage at an angular frequency $\\omega$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = −5e^{j30^\\circ}$ is:',
+    question: 'The dielectric strength of air is around 3 MV/m. When cloud-to-ground lightening occurs between a cloud whose base is 600 m above the ground, the corresponding breakdown voltage between the cloud and the ground is',
     questionImg: null,
     choices: [
-      '$\\nu (t) = 5cos(\\omega t +150^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −30^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −150^\\circ)$',
-      '$\\nu (t) = −5cos(\\omega t +60^\\circ)$'
+      '$V = 5 kV$',
+      '$V = 1.8 GV$',
+      '$2 kV$',
+      '$30 kV$'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-18.png'
@@ -275,13 +285,13 @@ var chapterData = [
     number: 19,
     type: 'Capacitance',
     topic: 'Phasors',
-    question: 'For an ac voltage at an angular frequency $\\omega = 377 rad/s$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
+    question: 'The structure shown in the figure consists of two concentric cylindrical shells, with the inner cylinder composed of a dielectric material with $\\epsilon_1 = 8\\epsilon_0$ and surrounded by a material with $\\epsilon_2 = 2\\epsilon_0$. The structure has conducting plates covering the top and bottom ends. What is the capacitance of the structure?',
     questionImg: 'ch4/4-19.png',
     choices: [
-      '$\\nu (t) = 3cos(377t +30^\\circ)$',
-      '$\\nu (t) = 3cos(377t +150^\\circ)$',
-      '$\\nu (t) = −3cos(377t −30^\\circ)$',
-      '$\\nu (t) = −3sin(377t −120^\\circ)$'
+      '$C = 12\\epsilon_0 \\mbox{ mF}$',
+      '$C = 24\\pi\\epsilon_0 \\mbox{ mF}$',
+      '$C = 7.2\\epsilon_0 \\mbox{ mF}$',
+      '$C = 7.6\\pi\\epsilon_0 \\mbox{ mF}$'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-19.png'
@@ -290,15 +300,13 @@ var chapterData = [
     number: 20,
     type: 'multiple',
     topic: 'Supercapacitor',
-    question: 'The height profile of a water wave created by a wave generator is given by' +
-      '$$y(x) = 6e^{−0.2x} cos(8px) \\mbox{ meters,}$$' +
-      'What is the wavelength of the wave?',
+    question: 'Select the only totally correct statement.',
     questionImg: null,
     choices: [
-      '$\\lambda = 0.2 m$',
-      '$\\lambda = 0.25 m$',
-      '$\\lambda = 0.4 m$',
-      '$\\lambda = 4 m$'
+      'A supercapacitor can store more energy per unit weight than a traditional capacitor, but its charge and discharge rates are slower.',
+      'A supercapacitor has faster charge and discharge rates than a traditional capacitor.',
+      'A supercapacitor has the same charge and discharge rates as a traditional capacitor, but it can store more energy per unit weight.',
+      'A supercapacitor can store more energy per unit weight than a traditional capacitor and also has faster charge and discharge rates.'
     ],
     answerIndex: 0,
     explanation: 'ch4/4-20.png'
@@ -307,13 +315,13 @@ var chapterData = [
     number: 21,
     type: 'multiple',
     topic: 'Supercapacitor',
-    question: 'The phasor equivalent of the time function $\\nu (t) = −4cos(\\omega t −30^\\circ)$ is:',
+    question: 'Select the only totally correct statement.',
     questionImg: null,
     choices: [
-      '$\\widetilde{V} = 4e^{−j150^\\circ}$',
-      '$\\widetilde{V} = 4e^{j150\\circ}$',
-      '$\\widetilde{V} = −4e^{j30\\circ}$',
-      '$\\widetilde{V} = −4e^{j150\\circ}$',
+      'A supercapacitor can charge and discharge faster than a battery as well as store more energy.',
+      'A supercapacitor can charge and discharge faster than a battery but it can store only a fraction of the energy that an equal-weight battery can.',
+      'A supercapacitor can store more energy per unit weight than a battery, but its charge and discharge rates are slower.',
+      'A supercapacitor cannot charge and discharge as fast as a battery nor store as much energy as an equal-weight battery can.'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-21.png'
@@ -322,13 +330,13 @@ var chapterData = [
     number: 22,
     type: 'multiple',
     topic: 'Humidity Sensor',
-    question: 'For an ac voltage at an angular frequency $\\omega$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = −5e^{j30^\\circ}$ is:',
+    question: 'A capacitive sensor measures the change in voltage in an ac bridge circuit due to a change in the capacitance. In a capacitive humidity sensor, the change in capacitance is due to:',
     questionImg: null,
     choices: [
-      '$\\nu (t) = 5cos(\\omega t +150^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −30^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −150^\\circ)$',
-      '$\\nu (t) = −5cos(\\omega t +60^\\circ)$'
+      'change in conductivity of the electrodes due to humidity.',
+      'change in separation between electrodes as the substrate expands because of humidity.',
+      'change in the permittivity of the substrate as a function of humidity.',
+      'change in the conductivity of the substrate as a function of humidity.'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-22.png'
@@ -337,13 +345,16 @@ var chapterData = [
     number: 23,
     type: 'multiple',
     topic: 'Image Method',
-    question: 'For an ac voltage at an angular frequency $\\omega = 377 rad/s$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
+    question: 'Consider the infinitely long line of charge, with charge density $\\rho_\\ell$, positioned\n' +
+      'parallel to a perfectly conducting flat surface at $a$ distance $d$. Using the result of\n' +
+      'Example 4-6 and the image method, obtain an expression for the electric field ${\\bf {E}}$ at\n' +
+      'a distance $r$ from the line of charge.',
     questionImg: 'ch4/4-23.png',
     choices: [
-      '$\\nu (t) = 3cos(377t +30^\\circ)$',
-      '$\\nu (t) = 3cos(377t +150^\\circ)$',
-      '$\\nu (t) = −3cos(377t −30^\\circ)$',
-      '$\\nu (t) = −3sin(377t −120^\\circ)$'
+      '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over \\pi\\epsilon_0r }$',
+      '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } - { 1 \\over 2d-r }]$',
+      '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } + { 1 \\over 2d-r }]$',
+      '${\\bf {E}} { {\\bf {\\hat{r}}} 2 \\rho_\\ell \\over \\pi\\epsilon_0r }$'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-23.png'
@@ -352,15 +363,16 @@ var chapterData = [
     number: 24,
     type: 'multiple',
     topic: 'Electrical Energy',
-    question: 'The height profile of a water wave created by a wave generator is given by' +
-      '$$y(x) = 6e^{−0.2x} cos(8px) \\mbox{ meters,}$$' +
-      'What is the wavelength of the wave?',
+    question: 'A micro–parallel-plate capacitor has square plates, each at 2 cm on the side, and separated by 1 mm. The material between the plates is mica with a permittivity\n' +
+      '$\\epsilon = 6\\epsilon_0$ and a dielectric strength of 200 MV/m. What is the maximum amount of\n' +
+      'electrical energy that can be stored in the capacitor before dielectric breakdown\n' +
+      'occurs?',
     questionImg: null,
     choices: [
-      '$\\lambda = 0.2 m$',
-      '$\\lambda = 0.25 m$',
-      '$\\lambda = 0.4 m$',
-      '$\\lambda = 4 m$'
+      '$W_e = 2.25 J$',
+      '$W_e = 2.25 nJ$',
+      '$W_e = 4.25 μJ$',
+      '$W_e = 0.425 J$'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-24.png'
