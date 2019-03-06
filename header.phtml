@@ -47,7 +47,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
         </v-list>
       </v-toolbar>
       <v-list
-        v-for="index in 13"
+        v-for="index in 10"
         :key="'drawer-link-' + index"
       >
         <v-list-tile :href="'chapter' + index + '.phtml'">
@@ -122,7 +122,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
                 color="info darken-2"
                 href="
                 <?php
-                if($chapterNum == 13){
+                if($chapterNum == 10){
                   echo 'index.phtml';
                 } else {
                   echo 'chapter' . ($chapterNum+1) . '.phtml';
@@ -131,7 +131,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
                 "
             >
               <?php
-              if($chapterNum == 13){
+              if($chapterNum == 10){
                 echo 'Quiz Homepage';
               } else {
                 echo 'Chapter ' . ($chapterNum+1);

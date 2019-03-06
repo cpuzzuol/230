@@ -1,5 +1,4 @@
 var chapterData = [
-  /*
   {
     number: 1,
     type: 'multiple',
@@ -250,7 +249,6 @@ var chapterData = [
     answerIndex: 0,
     explanation: 'ch4/4-16.png'
   },
-  */
   {
     number: 17,
     type: 'multiple',
