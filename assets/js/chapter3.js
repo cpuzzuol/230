@@ -71,7 +71,7 @@ var chapterData = [
       '$\\theta_{AB} = −36.87^\\circ$',
       '$\\theta_{AB} = −143.13^\\circ$'
     ],
-    answerIndex: 2,
+    answerIndex: 1,
     explanation: 'ch3/3-5.png'
   },
   {
