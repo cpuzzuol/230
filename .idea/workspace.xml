@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03359606-a343-4ac8-9b9f-da952ccf8ee5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/chapter3.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter4.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter4.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,15 +14,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/chapter4.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4250">
-              <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
@@ -32,10 +23,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
+        <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="117" column="6" lean-forward="true" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+            <state relative-caret-position="471">
+              <caret line="526" column="38" lean-forward="true" selection-start-line="526" selection-start-column="38" selection-end-line="526" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -63,9 +54,11 @@
       <find>1-</find>
       <find>\\mblock</find>
       <find>bf</find>
-      <find>tilde</find>
       <find>mbox</find>
       <find>13</find>
+      <find>ch4</find>
+      <find>4-</find>
+      <find>tilde</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -73,6 +66,8 @@
       <replace>3-</replace>
       <replace>ch4</replace>
       <replace>4-</replace>
+      <replace>ch2</replace>
+      <replace>2-</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -88,15 +83,15 @@
         <option value="$PROJECT_DIR$/assets/js/question-template.js" />
         <option value="$PROJECT_DIR$/chapter1.phtml" />
         <option value="$PROJECT_DIR$/chapter2.phtml" />
-        <option value="$PROJECT_DIR$/assets/js/chapter2.js" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/assets/js/chapter1.js" />
         <option value="$PROJECT_DIR$/chapter3.phtml" />
         <option value="$PROJECT_DIR$/chapter4.phtml" />
         <option value="$PROJECT_DIR$/footer.phtml" />
-        <option value="$PROJECT_DIR$/assets/js/chapter4.js" />
         <option value="$PROJECT_DIR$/header.phtml" />
         <option value="$PROJECT_DIR$/assets/js/chapter3.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter4.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter2.js" />
       </list>
     </option>
   </component>
@@ -142,15 +137,15 @@
               <item name="230" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="solutions" type="462c0819:PsiDirectoryNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="230" type="b2602c69:ProjectViewProjectNode" />
               <item name="230" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="solutions" type="462c0819:PsiDirectoryNode" />
-              <item name="ch3" type="462c0819:PsiDirectoryNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+              <item name="ch2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="230" type="b2602c69:ProjectViewProjectNode" />
@@ -206,16 +201,18 @@
       <workItem from="1551148001889" duration="11086000" />
       <workItem from="1551663164011" duration="40099000" />
       <workItem from="1551913839781" duration="28000" />
+      <workItem from="1552515188594" duration="8712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51213000" />
+    <option name="totallyTimeSpent" value="59925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13590844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13733906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -235,6 +232,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13733906" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -259,13 +277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
         </state>
       </provider>
     </entry>
@@ -330,8 +341,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/chapter4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4250">
-          <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
+        <state relative-caret-position="242">
+          <caret line="270" column="10" selection-start-line="270" selection-start-column="10" selection-end-line="270" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="233" column="22" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -342,10 +360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="117" column="6" lean-forward="true" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+        <state relative-caret-position="471">
+          <caret line="526" column="38" lean-forward="true" selection-start-line="526" selection-start-column="38" selection-end-line="526" selection-end-column="38" />
         </state>
       </provider>
     </entry>

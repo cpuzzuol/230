@@ -12,7 +12,7 @@ var chapterData = [
       '$\\rho_v = 0$ and ${\\bf {J}} = 0$.'
     ],
     answerIndex: 2, // choices[2]
-    explanation: 'ch4/4-1.png'
+    explanation: 'ch2/2-1.png'
   },
   {
     number: 2,
@@ -27,7 +27,7 @@ var chapterData = [
       'Under dynamic conditions.'
     ],
     answerIndex: 3,
-    explanation: 'ch4/4-2.png'
+    explanation: 'ch2/2-2.png'
   },
   {
     number: 3,
@@ -45,7 +45,7 @@ var chapterData = [
       '$1 \\over 2$'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-3.png'
+    explanation: 'ch2/2-3.png'
   },
   {
     number: 4,
@@ -63,7 +63,7 @@ var chapterData = [
       '$a_2 = 1.33$'
     ],
     answerIndex: 0,
-    explanation: 'ch4/4-4.png'
+    explanation: 'ch2/2-4.png'
   },
   {
     number: 5,
@@ -78,7 +78,7 @@ var chapterData = [
       '$Q = 2.26$ Coulomb'
     ],
     answerIndex: 3,
-    explanation: 'ch4/4-5.png'
+    explanation: 'ch2/2-5.png'
   },
   {
     number: 6,
@@ -93,7 +93,7 @@ var chapterData = [
       '$Q = 2 C$'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-6.png'
+    explanation: 'ch2/2-6.png'
   },
   {
     number: 7,
@@ -110,7 +110,7 @@ var chapterData = [
       '$Q = 0.51 C$'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-7.png'
+    explanation: 'ch2/2-7.png'
   },
   {
     number: 8,
@@ -125,14 +125,14 @@ var chapterData = [
       '$I = 16 A$'
     ],
     answerIndex: 0,
-    explanation: 'ch4/4-8.png'
+    explanation: 'ch2/2-8.png'
   },
   {
     number: 9,
     type: 'multiple',
     topic: 'Electric Field',
     question: 'The ring of charge shown in the figure is situated in the x–y plane and carries a uniform line charge density $\\rho_\\ell = −2 \\mbox{ (C/m)}$. What is the direction of the induced electric field at a point along the upper part of the $z$ axis?',
-    questionImg: 'ch4/4-9.png',
+    questionImg: 'ch2/2-9.png',
     choices: [
       '${\\bf {E}} = 0$ everywhere along $z$ axis.',
       '${\\bf {E}}$ direction is undefined.',
@@ -140,14 +140,14 @@ var chapterData = [
       '${\\bf {E}}$ direction along $+{\\bf {\\hat{z}}}$.'
     ],
     answerIndex: 2,
-    explanation: 'ch4/4-9.png'
+    explanation: 'ch2/2-9.png'
   },
   {
     number: 10,
     type: 'multiple',
     topic: 'Electric Field',
     question: 'The ring of charge shown in the figure is situated in the x–y plane and carries a uniform line charge density $\\rho_\\ell = −2 \\mbox{ (C/m)}$. What is the direction of ${\\bf {E}}$ at the origin?',
-    questionImg: 'ch4/4-10.png',
+    questionImg: 'ch2/2-10.png',
     choices: [
       'Along $−{\\bf {\\hat{z}}}$',
       'Irrelevant, because ${\\bf {E}} = 0$ at the origin',
@@ -155,14 +155,14 @@ var chapterData = [
       'Along ${\\bf {\\hat{r}}}$, the radial direction away from the origin.'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-10.png'
+    explanation: 'ch2/2-10.png'
   },
   {
     number: 11,
     type: 'multiple',
     topic: 'Electric Field',
     question: 'For a very long wire coincident with the $z$ axis and containing electrons, what is the direction of ${\\bf {E}}$ at a distance $r$ from the wire?',
-    questionImg: 'ch4/4-11.png',
+    questionImg: 'ch2/2-11.png',
     choices: [
       'Along ${\\bf {\\hat{r}}}$',
       'Along $+{\\bf {\\hat{z}}}$',
@@ -170,7 +170,7 @@ var chapterData = [
       'Along $-{\\bf {\\hat{r}}}$'
     ],
     answerIndex: 3,
-    explanation: 'ch4/4-11.png'
+    explanation: 'ch2/2-11.png'
   },
   {
     number: 12,
@@ -185,7 +185,7 @@ var chapterData = [
       'None of the above three statements is correct.'
     ],
     answerIndex: 0,
-    explanation: 'ch4/4-12.png'
+    explanation: 'ch2/2-12.png'
   },
   {
     number: 13,
@@ -200,7 +200,7 @@ var chapterData = [
       '$\\rho_v = 6 \\mbox{ (C/m3)}$'
     ],
     answerIndex: 2,
-    explanation: 'ch4/4-13.png'
+    explanation: 'ch2/2-13.png'
   },
   {
     number: 14,
@@ -217,14 +217,14 @@ var chapterData = [
       '$\\rho_v = 60$ (C/m<sup>3</sup>)'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-14.png'
+    explanation: 'ch2/2-14.png'
   },
   {
     number: 15,
     type: 'multiple',
     topic: 'Electric Field',
     question: 'For the electric dipole shown in the figure, what is the direction of ${\\bf {E}}$ at a distance $r$ from the midpoint of the dipole?',
-    questionImg: 'ch4/4-15.png',
+    questionImg: 'ch2/2-15.png',
     choices: [
       'Along $+{\\bf {\\hat{z}}}$',
       'Along ${\\bf {\\hat{y}}}$',
@@ -232,7 +232,7 @@ var chapterData = [
       'Along ${\\bf {\\hat{x}}}$'
     ],
     answerIndex: 2,
-    explanation: 'ch4/4-15.png'
+    explanation: 'ch2/2-15.png'
   },
   {
     number: 16,
@@ -247,7 +247,7 @@ var chapterData = [
       '10'
     ],
     answerIndex: 0,
-    explanation: 'ch4/4-16.png'
+    explanation: 'ch2/2-16.png'
   },
   {
     number: 17,
@@ -262,7 +262,7 @@ var chapterData = [
       'Its resistance changes if it gets stretched or compressed.'
     ],
     answerIndex: 3,
-    explanation: 'ch4/4-17.png'
+    explanation: 'ch2/2-17.png'
   },
   {
     number: 18,
@@ -277,14 +277,14 @@ var chapterData = [
       '$30 kV$'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-18.png'
+    explanation: 'ch2/2-18.png'
   },
   {
     number: 19,
-    type: 'Capacitance',
-    topic: 'Phasors',
+    type: 'multiple',
+    topic: 'Capacitance',
     question: 'The structure shown in the figure consists of two concentric cylindrical shells, with the inner cylinder composed of a dielectric material with $\\epsilon_1 = 8\\epsilon_0$ and surrounded by a material with $\\epsilon_2 = 2\\epsilon_0$. The structure has conducting plates covering the top and bottom ends. What is the capacitance of the structure?',
-    questionImg: 'ch4/4-19.png',
+    questionImg: 'ch2/2-19.png',
     choices: [
       '$C = 12\\epsilon_0 \\mbox{ mF}$',
       '$C = 24\\pi\\epsilon_0 \\mbox{ mF}$',
@@ -292,7 +292,7 @@ var chapterData = [
       '$C = 7.6\\pi\\epsilon_0 \\mbox{ mF}$'
     ],
     answerIndex: 3,
-    explanation: 'ch4/4-19.png'
+    explanation: 'ch2/2-19.png'
   },
   {
     number: 20,
@@ -307,7 +307,7 @@ var chapterData = [
       'A supercapacitor can store more energy per unit weight than a traditional capacitor and also has faster charge and discharge rates.'
     ],
     answerIndex: 0,
-    explanation: 'ch4/4-20.png'
+    explanation: 'ch2/2-20.png'
   },
   {
     number: 21,
@@ -322,7 +322,7 @@ var chapterData = [
       'A supercapacitor cannot charge and discharge as fast as a battery nor store as much energy as an equal-weight battery can.'
     ],
     answerIndex: 1,
-    explanation: 'ch4/4-21.png'
+    explanation: 'ch2/2-21.png'
   },
   {
     number: 22,
@@ -337,7 +337,7 @@ var chapterData = [
       'change in the conductivity of the substrate as a function of humidity.'
     ],
     answerIndex: 2,
-    explanation: 'ch4/4-22.png'
+    explanation: 'ch2/2-22.png'
   },
   {
     number: 23,
@@ -345,9 +345,9 @@ var chapterData = [
     topic: 'Image Method',
     question: 'Consider the infinitely long line of charge, with charge density $\\rho_\\ell$, positioned\n' +
       'parallel to a perfectly conducting flat surface at $a$ distance $d$. Using the result of\n' +
-      'Example 4-6 and the image method, obtain an expression for the electric field ${\\bf {E}}$ at\n' +
+      'Example 2-6 and the image method, obtain an expression for the electric field ${\\bf {E}}$ at\n' +
       'a distance $r$ from the line of charge.',
-    questionImg: 'ch4/4-23.png',
+    questionImg: 'ch2/2-23.png',
     choices: [
       '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over \\pi\\epsilon_0r }$',
       '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } - { 1 \\over 2d-r }]$',
@@ -355,7 +355,7 @@ var chapterData = [
       '${\\bf {E}} { {\\bf {\\hat{r}}} 2 \\rho_\\ell \\over \\pi\\epsilon_0r }$'
     ],
     answerIndex: 2,
-    explanation: 'ch4/4-23.png'
+    explanation: 'ch2/2-23.png'
   },
   {
     number: 24,
@@ -373,7 +373,7 @@ var chapterData = [
       '$W_e = 0.425 J$'
     ],
     answerIndex: 3,
-    explanation: 'ch4/4-24.png'
+    explanation: 'ch2/2-24.png'
   }
 ]
 
