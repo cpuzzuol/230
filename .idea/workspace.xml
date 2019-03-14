@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03359606-a343-4ac8-9b9f-da952ccf8ee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/chapter5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter5.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/chapter4.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/footer.phtml" afterDir="false" />
-    </list>
+    <list default="true" id="03359606-a343-4ac8-9b9f-da952ccf8ee5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +13,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/chapter5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="-1626">
               <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
             </state>
           </provider>
@@ -234,16 +206,15 @@
       <workItem from="1551663164011" duration="40099000" />
       <workItem from="1551913839781" duration="28000" />
       <workItem from="1552515188594" duration="9007000" />
-      <workItem from="1552578351138" duration="4835000" />
+      <workItem from="1552578351138" duration="5092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65055000" />
+    <option name="totallyTimeSpent" value="65312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13876967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -409,7 +380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/chapter5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="-1626">
           <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
         </state>
       </provider>
