@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03359606-a343-4ac8-9b9f-da952ccf8ee5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/chapter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/questions/ch5/5-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/solutions/ch5/5-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/chapter5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter5.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter4.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/footer.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,20 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.phtml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/chapter5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+            <state relative-caret-position="156">
+              <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/footer.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="598">
+              <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -58,15 +84,20 @@
       <find>ch4</find>
       <find>4-</find>
       <find>tilde</find>
+      <find>ch2</find>
+      <find>2-</find>
+      <find>example</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>ch3</replace>
       <replace>3-</replace>
-      <replace>ch4</replace>
-      <replace>4-</replace>
       <replace>ch2</replace>
       <replace>2-</replace>
+      <replace>5-</replace>
+      <replace>ch5</replace>
+      <replace>ch4</replace>
+      <replace>4-</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -86,11 +117,13 @@
         <option value="$PROJECT_DIR$/assets/js/chapter1.js" />
         <option value="$PROJECT_DIR$/chapter3.phtml" />
         <option value="$PROJECT_DIR$/chapter4.phtml" />
-        <option value="$PROJECT_DIR$/footer.phtml" />
         <option value="$PROJECT_DIR$/header.phtml" />
         <option value="$PROJECT_DIR$/assets/js/chapter3.js" />
-        <option value="$PROJECT_DIR$/assets/js/chapter4.js" />
         <option value="$PROJECT_DIR$/assets/js/chapter2.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter4.js" />
+        <option value="$PROJECT_DIR$/chapter5.phtml" />
+        <option value="$PROJECT_DIR$/footer.phtml" />
+        <option value="$PROJECT_DIR$/assets/js/chapter5.js" />
       </list>
     </option>
   </component>
@@ -200,18 +233,19 @@
       <workItem from="1551148001889" duration="11086000" />
       <workItem from="1551663164011" duration="40099000" />
       <workItem from="1551913839781" duration="28000" />
-      <workItem from="1552515188594" duration="8939000" />
+      <workItem from="1552515188594" duration="9007000" />
+      <workItem from="1552578351138" duration="4835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60152000" />
+    <option name="totallyTimeSpent" value="65055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13733906" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13876967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -272,13 +306,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/templates/question-template.phtml" />
-    <entry file="file://$PROJECT_DIR$/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -307,13 +334,6 @@
     <entry file="file://$PROJECT_DIR$/assets/img/solutions/ch3/3-3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="293" column="42" selection-start-line="293" selection-start-column="38" selection-end-line="293" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter3.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -328,41 +348,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.phtml">
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3207">
-          <caret line="92" column="69" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+        <state relative-caret-position="4981">
+          <caret line="293" column="42" selection-start-line="293" selection-start-column="38" selection-end-line="293" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="339" column="31" lean-forward="true" selection-start-line="339" selection-start-column="31" selection-end-line="339" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="233" column="22" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1139">
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter4.js">
+    <entry file="file://$PROJECT_DIR$/chapter5.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="270" column="10" selection-start-line="270" selection-start-column="10" selection-end-line="270" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="233" column="22" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="1353">
           <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
+    <entry file="file://$PROJECT_DIR$/footer.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="598">
+          <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
         </state>
       </provider>
     </entry>
