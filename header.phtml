@@ -12,7 +12,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
 
 <head>
   <meta charset="utf-8">
-  <title>230 Test Your Knowledge <?php echo $chapter ? "&mdash; Chapter $chapterNum" : ""; ?></title>
+  <title>em8e Test Your Knowledge <?php echo $chapter ? "&mdash; Chapter $chapterNum" : ""; ?></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,7 +41,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
         <v-list class="pa-0">
           <v-list-tile>
             <v-list-tile-content>
-              <v-list-tile-title>230 Quiz List</v-list-tile-title>
+                <v-btn flat href="index.phtml">em8e Test Your Knowledge</v-btn>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
@@ -56,7 +56,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
           </v-list-tile-action>
 
           <v-list-tile-content>
-            <v-list-tile-title>Chapter {{ index }}</v-list-tile-title>
+            <v-list-tile-title>{{ index }}) {{ chapterTitles[index - 1] }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -67,7 +67,14 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
         dark
     >
       <v-toolbar-side-icon @click="drawer ? drawer = false : drawer = true"></v-toolbar-side-icon>
-      <v-toolbar-title>Chapter <?php echo $chapterNum; ?></v-toolbar-title>
+      <v-toolbar-title>
+        <template v-if="!isIndexPage">
+          Chapter <?php echo $chapterNum; ?> &ndash; {{ chapterTitles[<?php echo $chapterNum - 1; ?>] }}
+        </template>
+        <template v-else>
+          em8e Test Your Understanding
+        </template>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-menu offset-y>
         <template v-slot:activator="{ on }">

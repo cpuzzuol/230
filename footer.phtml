@@ -212,20 +212,37 @@
     var app = new Vue({
       el: '#app',
       created() {
-        this.chapterData = chapterData // bind chapter questions to Vue instance (INCLUDED IN INDIVIDUAL CHAPTER FILES)
+        if(window.location.href.indexOf('index.phtml') > -1){
+          this.isIndexPage = true
+        } else {
+          this.chapterData = chapterData // bind chapter questions to Vue instance (INCLUDED IN INDIVIDUAL CHAPTER FILES)
 
-        // generate random question numbers with the upper limit being the number of questions in this chapter
-        while(this.randomizedQuestions.length < 5){
-          var q = Math.floor(Math.random()* this.chapterData.length) + 1
-          // if this question isn't already in the list of questions, add it
-          if(this.randomizedQuestions.indexOf(this.chapterData[q-1]) === -1) {
-            this.randomizedQuestions.push(this.chapterData[q-1])
+          // generate random question numbers with the upper limit being the number of questions in this chapter
+          while(this.randomizedQuestions.length < 5){
+            var q = Math.floor(Math.random()* this.chapterData.length) + 1
+            // if this question isn't already in the list of questions, add it
+            if(this.randomizedQuestions.indexOf(this.chapterData[q-1]) === -1) {
+              this.randomizedQuestions.push(this.chapterData[q-1])
+            }
           }
         }
       },
       data: {
         chapterData: null, // all the questions from the js file
+        chapterTitles: [
+          'Introduction: Waves and Phasors',
+          'Transmission Lines',
+          'Vector Analysis',
+          'Electrostatics',
+          'Magnetostatics',
+          'Maxwell\'s Equations for Time-Varying Fields',
+          'Plane-Wave Propagation',
+          'Wave Reflection and Transmission',
+          'Radiation and Antennas',
+          'Satellite Communication Systems and Radar Sensors'
+        ],
         drawer: false,
+        isIndexPage: false,
         progress: [
           {
             number: 1,

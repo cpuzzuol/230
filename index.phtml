@@ -1,7 +1,19 @@
 <?php
 include_once 'header.phtml';
 ?>
-Index
+<h1>Quizzes by Chapter</h1>
+<v-list>
+  <v-list-tile
+      v-for="(chapter, index) in chapterTitles"
+      :key="'chapter-' + index"
+  >
+    <v-list-tile-content>
+      <v-list-tile-title>
+        <a :href="'chapter' + (index + 1 ) +'.phtml'">{{ (index + 1) + ') ' + chapter }}</a>
+      </v-list-tile-title>
+    </v-list-tile-content>
+  </v-list-tile>
+</v-list>
 <?php
 include_once 'footer.phtml';
 ?>
