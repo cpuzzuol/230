@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03359606-a343-4ac8-9b9f-da952ccf8ee5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/header.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/footer.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,16 +134,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1572">
-              <caret line="214" column="59" lean-forward="true" selection-start-line="214" selection-start-column="59" selection-end-line="214" selection-end-column="59" />
+            <state relative-caret-position="402">
+              <caret line="214" column="91" selection-start-line="214" selection-start-column="91" selection-end-line="214" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
@@ -251,8 +251,8 @@
         <option value="$PROJECT_DIR$/chapter7.phtml" />
         <option value="$PROJECT_DIR$/assets/js/chapter7.js" />
         <option value="$PROJECT_DIR$/index.phtml" />
-        <option value="$PROJECT_DIR$/footer.phtml" />
         <option value="$PROJECT_DIR$/header.phtml" />
+        <option value="$PROJECT_DIR$/footer.phtml" />
       </list>
     </option>
   </component>
@@ -358,12 +358,12 @@
       <workItem from="1552578351138" duration="5092000" />
       <workItem from="1552698467544" duration="9000" />
       <workItem from="1552698518462" duration="4963000" />
-      <workItem from="1553114415351" duration="7167000" />
+      <workItem from="1553114415351" duration="7315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77451000" />
+    <option name="totallyTimeSpent" value="77599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -593,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter7.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/chapter6.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
@@ -656,10 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.phtml">
+    <entry file="file://$PROJECT_DIR$/chapter7.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1572">
-          <caret line="214" column="59" lean-forward="true" selection-start-line="214" selection-start-column="59" selection-end-line="214" selection-end-column="59" />
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -670,6 +663,13 @@
           <folding>
             <element signature="e#2194#2201#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="214" column="91" selection-start-line="214" selection-start-column="91" selection-end-line="214" selection-end-column="91" />
         </state>
       </provider>
     </entry>

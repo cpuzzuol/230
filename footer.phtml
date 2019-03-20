@@ -212,7 +212,7 @@
     var app = new Vue({
       el: '#app',
       created() {
-        if(window.location.href.indexOf('index.phtml') > -1){
+        if(window.location.href.endsWith('index.phtml') || window.location.href.endsWith('/')){
           this.isIndexPage = true
         } else {
           this.chapterData = chapterData // bind chapter questions to Vue instance (INCLUDED IN INDIVIDUAL CHAPTER FILES)
