@@ -76,7 +76,7 @@ $chapterNum = filter_var($chapter, FILTER_SANITIZE_NUMBER_INT);
         </template>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-menu offset-y>
+      <v-menu offset-y v-if="!isIndexPage">
         <template v-slot:activator="{ on }">
           <v-btn color="red darken-2" dark v-on="on">
             Score: {{ totalPoints }}/100 points
