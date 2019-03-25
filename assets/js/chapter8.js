@@ -3,14 +3,15 @@ var chapterData = [
     number: 1,
     type: 'multiple',
     topic: 'Normal Incidence',
-    question: 'A TEM wave propagating from an aircraft overhead towards the ground has its $\\bf{E}$\n' +
-      'field pointing eastward. What is the direction of its $\\bf{H}$ field?',
+    question: 'When a plane wave in medium 1 is incident upon a plane boundary of a different\n' +
+      'medium at normal incidence, the $\\bf{E}$ and $\\bf{H}$ fields of the reflected and transmitted\n' +
+      'waves can be related to those of the incident wave by applying:',
     questionImg: 'ch8/8-1.png',
     choices: [
-      '$\\bf{H}$ points westward.',
-      '$\\bf{H}$ points northward',
-      '$\\bf{H}$ points southward.',
-      '$\\bf{H}$ points eastward.'
+      'Only the boundary condition for $\\bf{E}$.',
+      'Only the boundary condition for $\\bf{H}$.',
+      'The boundary conditions for both $\\bf{E}$ and $\\bf{H}$.',
+      'Snell\'s laws.'
     ],
     answerIndex: 2, // choices[2]
     explanation: 'ch8/8-1.png'
@@ -19,15 +20,16 @@ var chapterData = [
     number: 2,
     type: 'multiple',
     topic: 'Oblique Incidence',
-    question: 'The electric field of a plane wave propagating in a nonmagnetic material is given by \n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } = [ { \\bf{ \\hat{y} } } 3 \\mathrm{sin} ( \\pi \\times 10^8t − \\pi x) + { \\bf{ \\hat{z} } } 4 \\mathrm{cos} ( \\pi \\times 10^8t − \\pi x)]$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{V/m} ).$\n<br><br>' +
-      'Determine the wavelength $\\lambda$.',
+    question: 'When a plane wave in medium 1 is incident upon a plane boundary of a different\n' +
+      'medium at oblique incidence, the $\\bf{E}$ and $\\bf{H}$ fields and the directions of propagation\n' +
+      'of the reflected and transmitted waves can be related to those of the incident wave\n' +
+      'by applying:',
     questionImg: 'ch8/8-2.png',
     choices: [
-      '$\\lambda = 10 \\mbox{ m}$',
-      '$\\lambda = 2 \\mbox{ m}$',
-      '$\\lambda = 0.2 \\mbox{ m}$',
-      '$\\lambda = 0.1 \\mbox{ m}$',
+      'Only Snell\'s laws.',
+      'The boundary conditions for both $\\bf{E}$ and $\\bf{H}$.',
+      'The phase-matching condition.',
+      'The boundary conditions for both $\\bf{E}$ and $\\bf{H}$ plus the phase-matching condition.',
     ],
     answerIndex: 3,
     explanation: 'ch8/8-2.png'
@@ -36,15 +38,15 @@ var chapterData = [
     number: 3,
     type: 'multiple',
     topic: 'Radar Radome',
-    question: 'The electric field of a plane wave propagating in a nonmagnetic material is given by \n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } = [ { \\bf{ \\hat{y} } } 3 \\mathrm{sin} ( \\pi \\times 10^8t − \\pi x) + { \\bf{ \\hat{z} } } 4 \\mathrm{cos} ( \\pi \\times 10^8t − \\pi x)]$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{V/m} ).$\n<br><br>' +
-      'Determine the relative permittivity of the material.',
+    question: 'The aircraft radome shown in the figure has $\\epsilon_r = 16$ and the radar operates at $5 \\mbox{ GHz}$.\n' +
+      'How thick should the radome be so that it is structurally strong $(d > 2 \\mbox{ cm})$\n' +
+      'and simultaneously "transparent" to the radar signal?',
     questionImg: 'ch8/8-3.png',
     choices: [
-      '$\\epsilon_r = 4$',
-      '$\\epsilon_r = 1$',
-      '$\\epsilon_r = 36$',
-      '$\\epsilon_r = 9$'
+      '$d = 3 \\mbox{ cm}$',
+      '$d = 2.25 \\mbox{ cm}$',
+      '$d = 2.5 \\mbox{ cm}$',
+      '$d = 2.1 \\mbox{ cm}$'
     ],
     answerIndex: 1,
     explanation: 'ch8/8-3.png'
@@ -53,16 +55,15 @@ var chapterData = [
     number: 4,
     type: 'multiple',
     topic: 'Normal Incidence on Conductor',
-    question: 'The electric field of a plane wave propagating in a lossless, nonmagnetic, dielectric\n' +
-      'material with $\\epsilon_r = 2.56$ is given by\n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } = { \\bf{ \\hat{y} } } 12 \\mathrm{cos} (6 \\pi \\times 10^9t − kz)$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{V/m} ).$\n<br><br>' +
-      'Determine the wavelength $\\lambda$ in the material.',
+    question: 'A $7.5 \\mbox{ GHz}$ plane wave in air is normally incident upon the plane surface of a very\n' +
+      'good conductor. At what distance from the boundary in the air medium is the $\\bf{E}$\n' +
+      'field at its first maximum?',
     questionImg: null,
     choices: [
-      '$\\lambda = 6.24 \\mbox{ cm}$',
-      '$\\lambda = 2 \\mbox{ m}$',
-      '$\\lambda = 8.4 \\mbox{ cm}$',
-      '$\\lambda = 62.4 \\mbox{ cm}$',
+      '$l_{\\mathrm{max}} = 1 \\mbox{ cm}$',
+      '$l_{\\mathrm{max}} = 2 \\mbox{ cm}$',
+      '$l_{\\mathrm{max}} = 4 \\mbox{ cm}$',
+      '$l_{\\mathrm{max}} = 0.5 \\mbox{ cm}$'
     ],
     answerIndex: 0,
     explanation: 'ch8/8-4.png'
@@ -71,16 +72,13 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'Modal Dispersion',
-    question: 'The electric field of a plane wave propagating in a lossless, nonmagnetic, dielectric\n' +
-      'material with $\\epsilon_r = 14.2$ is given by\n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } = { \\bf{ \\hat{y} } } 12 \\mathrm{cos} (6 \\pi \\times 10^9t − kz)$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{V/m} ).$\n<br><br>' +
-      'Determine the intrinsic impedance $\\eta$ of the material.',
+    question: 'The term "modal dispersion" in optical fibers refers to:',
     questionImg: null,
     choices: [
-      '$\\eta = 187 \\mbox{ } \\Omega$',
-      '$\\eta = 76 \\mbox{ } \\Omega$',
-      '$\\eta = 100 \\mbox{ } \\Omega$',
-      '$\\eta = 63 \\mbox{ } \\Omega$'
+      'Light rays dispersing out of the fiber.',
+      'Light modes that cause the fiber to act like a short circuit.',
+      'Different light modes having different transit times between the two ends.',
+      'None of the above.'
     ],
     answerIndex: 2,
     explanation: 'ch8/8-5.png'
@@ -89,14 +87,15 @@ var chapterData = [
     number: 6,
     type: 'multiple',
     topic: 'Plane of Incidence',
-    question: 'RFID tags operating at the microwave frequency of 2.45 GHz offer superior\n' +
-      'performance over those operating at lower frequencies in the following regard:',
+    question: 'Transverse electric (TE) and transverse magnetic (TM) polarizations are defined in\n' +
+      'terms of the direction of the electric field relative to the <i>plane of incidence</i>. For the\n' +
+      'configuration shown, the plane of incidence is:',
     questionImg: 'ch8/8-6.png',
     choices: [
-      'Greater read range and lower power requirements.',
-      'Greater read range and higher data rate.',
-      'Higher data rate and lower power requirements.',
-      'Smaller size and lower power requirements.'
+      'The $x–y$ plane.',
+      'The plane containing ${ \\bf{ \\hat{k} } }_i$ and ${ \\bf{ \\hat{z} } }$.',
+      'The $x–z$ plane.',
+      'The $y–z$ plane.'
     ],
     answerIndex: 1,
     explanation: 'ch8/8-6.png'
@@ -105,13 +104,13 @@ var chapterData = [
     number: 7,
     type: 'multiple',
     topic: 'Brewster Angle',
-    question: 'A helical antenna is used to generate:',
+    question: 'For nonmagnetic materials the Brewster angle does not exist:',
     questionImg: null,
     choices: [
-      'Linearly polarized EM waves.',
-      'Elliptically polarized EM waves.',
-      'Circularly polarized EM waves.',
-      'All of the above.'
+      'For perpendicular polarization.',
+      'For parallel polarization.',
+      'For any polarization.',
+      'For low dielectric media.'
     ],
     answerIndex: 0,
     explanation: 'ch8/8-7.png'
@@ -120,13 +119,16 @@ var chapterData = [
     number: 8,
     type: 'multiple',
     topic: 'Rectangular Waveguide',
-    question: 'A TEM wave is right-hand circularly polarized if the $\\bf{E}$ vector:',
+    question: 'Cutoff frequencies for TE and TM modes in a hollow rectangular waveguide with\n<br><br>' +
+      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$a = 3 \\mbox{ cm}$ and $b = 2 \\mbox{ cm}$.\n<br><br>' +
+      'In a rectangular waveguide, the cutoff frequency associated with a given mode\n' +
+      'defines:',
     questionImg: 'ch8/8-8.png',
     choices: [
-      'rotates counterclockwise as it travels in space.',
-      'rotates clockwise as a function of time when viewed in a plane across the direction of travel.',
-      'rotates at the same rate as the $\\bf{H}$ vector.',
-      'rotates counterclockwise as a function of time when viewed in a plane across the direction of travel.'
+      'The frequency above which the wave will not propagate.',
+      'The frequency at which the group velocity is a maximum.',
+      'The frequency at which the zigzag angle is zero.',
+      'The frequency below which the wave will not propagate.'
     ],
     answerIndex: 3,
     explanation: 'ch8/8-8.png'
@@ -135,15 +137,15 @@ var chapterData = [
     number: 9,
     type: 'multiple',
     topic: 'Resonant Cavity',
-    question: 'The electric field of a plane wave is given by:\n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } (z, t) = { \\bf{ \\hat{x} } } a_x \\mathrm{cos} ( \\omega t − kz) + { \\bf{ \\hat{y} } } a_y \\mathrm{cos} ( \\omega t − kz + \\delta )$.\n<br><br>' +
-      'The wave is linearly polarized only if:',
+    question: 'One of the modes of a metallic resonant cavity has a resonant frequency of $10 \\mbox{ GHz}$\n' +
+      'and a quality factor $Q = 10^4$. What is the bandwidth of the spectrum supportable\n' +
+      'by that cavity at that mode?',
     questionImg: null,
     choices: [
-      '$\\delta = 0$ or $\\pi$',
-      '$a_x = a_y$',
-      '$a_x = 0$ or $a_y = 0$',
-      '$a_x = a_y$ and $\\delta = 0$'
+      '$\\Delta f = 100 \\mbox{ MHz}$',
+      '$\\Delta f = 1 \\mbox{ MHz}$',
+      '$\\Delta f = 30 \\mbox{ MHz}$',
+      '$\\Delta f = 3 \\mbox{ MHz}$'
     ],
     answerIndex: 1,
     explanation: 'ch8/8-9.png'
@@ -152,15 +154,15 @@ var chapterData = [
     number: 10,
     type: 'multiple',
     topic: 'Wave Power',
-    question: 'The electric field of a plane wave is given by:\n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } (z, t) = { \\bf{ \\hat{x} } } a_x \\mathrm{cos} ( \\omega t − kz) + { \\bf{ \\hat{y} } } a_y \\mathrm{cos} ( \\omega t − kz + \\delta )$.\n<br><br>' +
-      'The wave is RHC polarized only if:',
+    question: 'A plane wave in air with an electric field amplitude of $40 \\mbox{ V/m}$ is incident normally\n' +
+      'upon the surface of a lossless, nonmagnetic medium with $\\epsilon_r = 25$. Determine the\n' +
+      'average power density of the transmitted wave.',
     questionImg: null,
     choices: [
-      '$\\delta = 0$',
-      '$a_x = a_y$',
-      '$a_x = a_y$ and $\\delta = \\pi /2$',
-      '$a_x = a_y$ and $\\delta = − \\pi /2$'
+      '${S^t}_{av} = 0.28 \\mbox{ } \\mathrm{W/m^2}$',
+      '${S^t}_{av} = 2.92 \\mbox{ } \\mathrm{W/m^2}$',
+      '${S^t}_{av} = 1.12 \\mbox{ } \\mathrm{W/m^2}$',
+      '${S^t}_{av} = 0.56 \\mbox{ } \\mathrm{W/m^2}$'
     ],
     answerIndex: 2,
     explanation: 'ch8/8-10.png'
@@ -169,14 +171,16 @@ var chapterData = [
     number: 11,
     type: 'multiple',
     topic: 'Minima and Maxima',
-    question: 'Seawater has a relative permittivity $\\epsilon_r = 80$ and a conductivity $\\sigma = 4 \\mbox{ (S/m)}$. Over \n' +
-      'what frequency range does seawater behave like a good conductor?',
+    question: 'A $25 \\mbox{-MHz}$ plane wave with electric field amplitude of $25 \\mbox{ V/m}$ is normally incident\n' +
+      'in air onto a semi-infinite, perfect dielectric medium with $\\epsilon_r = 36$. Determine the\n' +
+      'distance in the air medium from the boundary to the nearest minimum of the\n' +
+      'electric field intensity, $\\bf{|E|}$.',
     questionImg: null,
     choices: [
-      '$f < 9 \\mbox{ MHz}$',
-      '$f > 180 \\mbox{ MHz}$',
-      '$f < 18 \\mbox{ MHz}$',
-      '$f > 2 \\mbox{ MHz}$'
+      '$l_{\\mathrm{min}} = 1 \\mbox{ m}$',
+      '$l_{\\mathrm{min}} = 1.5 \\mbox{ m}$',
+      '$l_{\\mathrm{min}} = 3 \\mbox{ m}$',
+      '$l_{\\mathrm{min}} = 0$'
     ],
     answerIndex: 3,
     explanation: 'ch8/8-11.png'
@@ -185,14 +189,16 @@ var chapterData = [
     number: 12,
     type: 'multiple',
     topic: 'Light Color',
-    question: 'Dry soil has a relative permittivity $\\epsilon_r = 2.5$ and a conductivity $\\sigma = 10^{−4} \\mbox{ (S/m)}$.\n' +
-      'Over what frequency range does dry soil behave like a good conductor?',
+    question: 'Orange light of wavelength $0.61 \\mbox{ } \\mathrm{ \\mu m}$ in air enters a block of glass with $\\epsilon_r = 1.68$.\n' +
+      'What color would it appear to a sensor embedded in the glass? The wavelength\n' +
+      'ranges of colors are violet $(0.39 \\mbox{ to } 0.45 \\mbox{ } \\mathrm{\\mu m})$, blue $(0.45 \\mbox{ to } 0.49 \\mbox{ } \\mathrm{ \\mu m})$, green $(0.49 \\mbox{ to } 0.58 \\mbox{ } \\mathrm{ \\mu m})$,\n' +
+      'yellow $(0.58 \\mbox{ to } 0.60 \\mbox{ } \\mathrm{ \\mu m})$, orange $(0.60 \\mbox{ to } 0.62 \\mbox{ } \\mathrm{\\mu m})$, and red $(0.62 \\mbox{ to } 0.78 \\mbox{ } \\mathrm{ \\mu m})$.',
     questionImg: null,
     choices: [
-      '$f > 1 \\mbox{ MHz}$',
-      '$f < 700 \\mbox{ kHz}$',
-      '$f < 1 \\mbox{ MHz}$',
-      '$f > 1 \\mbox{ GHz}$'
+      'blue',
+      'orange',
+      'green',
+      'red'
     ],
     answerIndex: 0,
     explanation: 'ch8/8-12.png'
@@ -201,14 +207,16 @@ var chapterData = [
     number: 13,
     type: 'multiple',
     topic: 'Incidence Angle',
-    question: 'Seawater has a relative permittivity $\\epsilon_r = 80$, magnetic permeability $\\mu = \\mu_0$, and a\n' +
-      'conductivity $\\sigma = 4 \\mbox{ (S/m)}$. What is the skin depth of seawater at $1 \\mbox{ MHz}$?',
+    question: 'A plane wave in air with\n<br><br>' +
+      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{ \\widetilde{E} } }^i = ({ \\bf{ \\hat{x} } } 6 − { \\bf{ \\hat{y} } } 4 − { \\bf{ \\hat{z} } } 6)e^{ −j(4x+6z) }$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(V/m)$\n<br><br>' +
+      'is incident upon the planar surface of a dielectric material, with $\\epsilon_r = 2.25$\n' +
+      'occupying the half-space $z \\geq 0$. Determine the incidence angle $\\theta_i$.',
     questionImg: null,
     choices: [
-      '$\\delta_s = 100 \\mbox{ m}$',
-      '$\\delta_s = 1 \\mbox{ cm}$',
-      '$\\delta_s = 1 \\mbox{ km}$',
-      '$\\delta_s = 25 \\mbox{ cm}$'
+      '$\\theta_i = 45.4^\\circ$',
+      '$\\theta_i = 33.7^\\circ$',
+      '$\\theta_i = 28.4^\\circ$',
+      '$\\theta_i = 62.7^\\circ$'
     ],
     answerIndex: 1,
     explanation: 'ch8/8-13.png'
@@ -217,15 +225,14 @@ var chapterData = [
     number: 14,
     type: 'multiple',
     topic: 'Refraction Angle',
-    question: 'A wave traveling in a nonmagnetic medium with er = 9 is characterized by an electric field given by\n<br><br>' +
-      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } = [ { \\bf{ \\hat{y} } } 6 \\mathrm{cos} ( \\pi \\times 10^7t + kx) − { \\bf{ \\hat{z} } } 4 \\mathrm{cos} ( \\pi \\times 10^7t + kx )]$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{V/m} )$.\n<br><br>' +
-      'What is the average power density carried by the wave?',
+    question: 'A parallel-polarized plane wave is incident from air onto a dielectric medium with\n' +
+      '$\\epsilon_r = 4$ at the Brewster angle. What is the refraction angle?',
     questionImg: null,
     choices: [
-      '$S_{av} = 12 \\mbox{ } ( \\mathrm{ W/m^2 })$',
-      '$S_{av} = 0.2 \\mbox{ } ( \\mathrm{ W/m^2 })$',
-      '$S_{av} = 8 \\mbox{ } ( \\mathrm{ mW/m^2 })$',
-      '$S_{av} = 2 \\mbox{ } ( \\mathrm{ mW/m^2 })$'
+      '$\\theta_2 = 18.44^\\circ$',
+      '$\\theta_2 = 36.22^\\circ$',
+      '$\\theta_2 = 19.32^\\circ$',
+      '$\\theta_2 = 26.57^\\circ$'
     ],
     answerIndex: 3,
     explanation: 'ch8/8-14.png'
@@ -234,15 +241,16 @@ var chapterData = [
     number: 15,
     type: 'multiple',
     topic: 'Waveguide',
-    question: 'A wave traveling in a lossless, nonmagnetic medium has an electric field amplitude\n' +
-      'of $47.56 \\mbox{ V/m}$ and an average power density of $6 \\mbox{ } \\mathrm{W/m^2}$. Determine the phase\n' +
-      'velocity of the wave.',
+    question: 'A TE wave propagating in a dielectric-filled waveguide of unknown permittivity\n' +
+      'has dimensions $a = 5 \\mbox{ cm}$ and $b = 3 \\mbox{ cm}$. If the x-component of its electric field is given by\n<br><br>' +
+      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$E_{\\mathrm{x}} = −36 \\mathrm{cos} (20 \\pi x) \\mathrm{sin} (100 \\pi y) \\mathrm{sin} (2.4 \\pi \\times 10^{10} t − 52.9 \\pi z),$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\\mbox{(V/m)}$\n<br><br>' +
+      'determine the mode number.',
     questionImg: null,
     choices: [
-      '$u_p = 3 \\times 10^8 \\mbox{ m/s}$',
-      '$u_p = 1 \\times 10^8 \\mbox{ m/s}$',
-      '$u_p = 1.5 \\times 10^8 \\mbox{ m/s}$',
-      '$u_p = 0.75 \\times 10^8 \\mbox{ m/s}$'
+      '$\\mathrm{TE_{13}}$',
+      '$\\mathrm{TE_{31}}$',
+      '$\\mathrm{TE_{23}}$',
+      '$\\mathrm{TE_{12}}$'
     ],
     answerIndex: 0,
     explanation: 'ch8/8-15.png'
