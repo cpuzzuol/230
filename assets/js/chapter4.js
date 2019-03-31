@@ -3,7 +3,7 @@ var chapterData = [
     number: 1,
     type: 'multiple',
     topic: 'Static Conditions',
-    question: 'In electromagnetics, under “static conditions” means that <strong>E</strong> and <strong>H</strong> in a given region of space do not vary with time, which is due to:',
+    question: 'In electromagnetics, under "static conditions" means that $\\bf{E}$ and $\\bf{H}$ in a given region of space do not vary with time, which is due to:',
     questionImg: null,
     choices: [
       'all electrons being stationary (not moving).',
@@ -22,7 +22,7 @@ var chapterData = [
     questionImg: null,
     choices: [
       'Never; we always should be able to compute E independently of H, and vice versa.',
-      'We have to consider <strong>E</strong> and <strong>H</strong> simultaneously if they point in the same direction.',
+      'We have to consider $\\bf{E}$ and $\\bf{H}$ simultaneously if they point in the same direction.',
       'Under static conditions.',
       'Under dynamic conditions.'
     ],
@@ -87,10 +87,10 @@ var chapterData = [
     question: 'If the line charge density is given by $\\rho_l = 12y^2 (\\mbox{mC/m})$, find the total charge distributed on the y axis from $y = −5$ to $y = 5$.',
     questionImg: null,
     choices: [
-      '$Q = 4 C$',
-      '$Q = 1 C$',
-      '$Q = 0.2 C$',
-      '$Q = 2 C$'
+      '$Q = 4 \\mbox{ C}$',
+      '$Q = 1 \\mbox{ C}$',
+      '$Q = 0.2 \\mbox{ C}$',
+      '$Q = 2 \\mbox{ C}$'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-6.png'
@@ -104,10 +104,10 @@ var chapterData = [
       'where $r$ is the radial distance from the center of the disk. The disk radius is 3 m. What is the total charge on the disk?',
     questionImg: null,
     choices: [
-      '$Q = 5.03 C$',
-      '$Q = 10.06 C$',
-      '$Q = 22.32 C$',
-      '$Q = 0.51 C$'
+      '$Q = 5.03 \\mbox{ C}$',
+      '$Q = 10.06 \\mbox{ C}$',
+      '$Q = 22.32 \\mbox{ C}$',
+      '$Q = 0.51 \\mbox{ C}$'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-7.png'
@@ -120,9 +120,9 @@ var chapterData = [
     questionImg: null,
     choices: [
       '$I = 0$',
-      '$I = 4 A$',
-      '$I = 2 A$',
-      '$I = 16 A$'
+      '$I = 4 \\mbox{ A}$',
+      '$I = 2 \\mbox{ A}$',
+      '$I = 16 \\mbox{ A}$'
     ],
     answerIndex: 0,
     explanation: 'ch4/4-8.png'
@@ -194,10 +194,10 @@ var chapterData = [
     question: 'In a given region of space, the electric flux density is given by ${\\bf {D}} = {\\bf {\\hat{x}}}xz^2$. What is the corresponding volume charge density at (0,0,2)?',
     questionImg: null,
     choices: [
-      '$\\rho_v = 0$',
-      '$\\rho_v = −2 \\mbox{ (C/m3)}$',
-      '$\\rho_v = 4 \\mbox{ (C/m3)}$',
-      '$\\rho_v = 6 \\mbox{ (C/m3)}$'
+      '$\\rho_{\\mathrm{v}} = 0$',
+      '$\\rho_{\\mathrm{v}} = −2 \\mbox{ } \\mathrm{(C/m^3)}$',
+      '$\\rho_{\\mathrm{v}} = 4 \\mbox{ } \\mathrm{(C/m^3)}$',
+      '$\\rho_{\\mathrm{v}} = 6 \\mbox{ } \\mathrm{(C/m^3)}$'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-13.png'
@@ -211,10 +211,10 @@ var chapterData = [
       'What is the volume charge density at $r = a$?',
     questionImg: null,
     choices: [
-      '$\\rho_v = 150$ (C/m<sup>3</sup>)',
-      '$\\rho_v = 40$ (C/m<sup>3</sup>)',
-      '$\\rho_v = 15$ (C/m<sup>3</sup>)',
-      '$\\rho_v = 60$ (C/m<sup>3</sup>)'
+      '$\\rho_{\\mathrm{v}} = 150$ (C/m<sup>3</sup>)',
+      '$\\rho_{\\mathrm{v}} = 40$ (C/m<sup>3</sup>)',
+      '$\\rho_{\\mathrm{v}} = 15$ (C/m<sup>3</sup>)',
+      '$\\rho_{\\mathrm{v}} = 60$ (C/m<sup>3</sup>)'
     ],
     answerIndex: 1,
     explanation: 'ch4/4-14.png'
@@ -367,10 +367,10 @@ var chapterData = [
       'occurs?',
     questionImg: null,
     choices: [
-      '$W_e = 2.25 J$',
-      '$W_e = 2.25 nJ$',
-      '$W_e = 4.25 μJ$',
-      '$W_e = 0.425 J$'
+      '$W_{\\mathrm{e}} = 2.25 J$',
+      '$W_{\\mathrm{e}} = 2.25 nJ$',
+      '$W_{\\mathrm{e}} = 4.25 μJ$',
+      '$W_{\\mathrm{e}} = 0.425 J$'
     ],
     answerIndex: 3,
     explanation: 'ch4/4-24.png'

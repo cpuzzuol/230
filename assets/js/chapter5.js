@@ -230,10 +230,10 @@ var chapterData = [
       'due to the infinitely long current-carrying conductor?',
     questionImg: 'ch5/5-15.png',
     choices: [
-      '$W_m = 2 \\mu_0 \\mbox{ x } 10^{−2} \\mbox{ } ( \\mbox{J} )$',
-      '$W_m = 16 \\mu_0 \\mbox{ x } 10^{−6} \\mbox{ } ( \\mbox{J} )$',
-      '$W_m = 4 \\mu_0 \\mbox{ x } 10^{−4} \\mbox{ } ( \\mbox{J} )$',
-      '$W_m = 4 \\mu_0 \\mbox{ x } 10^{−2} \\mbox{ } ( \\mbox{J} )$'
+      '$W_{ \\mathrm{m} } = 2 \\mu_0 \\mbox{ x } 10^{−2} \\mbox{ } ( \\mbox{J} )$',
+      '$W_{ \\mathrm{m} } = 16 \\mu_0 \\mbox{ x } 10^{−6} \\mbox{ } ( \\mbox{J} )$',
+      '$W_{ \\mathrm{m} } = 4 \\mu_0 \\mbox{ x } 10^{−4} \\mbox{ } ( \\mbox{J} )$',
+      '$W_{ \\mathrm{m} } = 4 \\mu_0 \\mbox{ x } 10^{−2} \\mbox{ } ( \\mbox{J} )$'
     ],
     answerIndex: 2,
     explanation: 'ch5/5-15.png'

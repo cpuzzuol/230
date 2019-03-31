@@ -6,10 +6,10 @@ var chapterData = [
     question: 'For two vectors <strong>A</strong> and <strong>B</strong>, which one of the following statements is true?',
     questionImg: null,
     choices: [
-      'A·B is commutative, as is A×B.',
-      'A·B is commutative, but A×B is not.',
-      'A·B is not commutative, but A×B is.',
-      'Neither A·B nor A×B is commutative.'
+      '$A \\cdot B$ is commutative, as is $A \\times B$.',
+      '$A \\cdot B$ is commutative, but $A \\times B$ is not.',
+      '$A \\cdot B$ is not commutative, but $A \\times B$ is.',
+      'Neither $A \\cdot B$ nor $A \\times B$ is commutative.'
     ],
     answerIndex: 1, // choices[1]
     explanation: 'ch3/3-1.png'
@@ -21,10 +21,10 @@ var chapterData = [
     question: 'For the vector operation <strong>C = A×B</strong>, which one of the following statements is true?',
     questionImg: null,
     choices: [
-      'The direction of C lies in the plane containing A and B and obeys the righthand rule.',
-      'The direction of C lies in the plane containing A and B and obeys the lefthand rule.',
-      'The direction of C is orthogonal to the plane containing A and B and obeys the right-hand rule.',
-      'The direction of C is orthogonal to the plane containing A and B and obeys the left-hand rule.'
+      'The direction of $C$ lies in the plane containing $A$ and $B$ and obeys the righthand rule.',
+      'The direction of $C$ lies in the plane containing $A$ and $B$ and obeys the lefthand rule.',
+      'The direction of $C$ is orthogonal to the plane containing $A$ and $B$ and obeys the right-hand rule.',
+      'The direction of $C$ is orthogonal to the plane containing $A$ and $B$ and obeys the left-hand rule.'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-2.png'
@@ -36,10 +36,10 @@ var chapterData = [
     question: 'Only one of the following four statements is a meaningful product. Which one?',
     questionImg: null,
     choices: [
-      'A·(B·C)',
-      'A×(B·C)',
-      'A(B×C)',
-      'A(B·C)'
+      '$A \\cdot (B \\cdot C)$',
+      '$A \\times (B \\cdot C)$',
+      '$A (B \\times C)$',
+      '$A (B \\cdot C)$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-3.png'
@@ -126,10 +126,10 @@ var chapterData = [
     question: 'Given vector ${\\bf {A}} = −{\\bf \\hat{x}} 2xy + {\\bf \\hat{y}} 2 y^2$, determine the divergence $\\triangledown · {\\bf {A}}$ at $P = (1,2)$.',
     questionImg: 'ch3/3-9.png',
     choices: [
-      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = 0$',
-      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = 2$',
-      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = 4$',
-      '$({\\bf {\\triangledown · A}}) |_{(1,2)} = -2$',
+      '$({\\bf {\\triangledown \\cdot A}}) |_{(1,2)} = 0$',
+      '$({\\bf {\\triangledown \\cdot A}}) |_{(1,2)} = 2$',
+      '$({\\bf {\\triangledown \\cdot A}}) |_{(1,2)} = 4$',
+      '$({\\bf {\\triangledown \\cdot A}}) |_{(1,2)} = -2$',
     ],
     answerIndex: 2,
     explanation: 'ch3/3-9.png'
@@ -141,10 +141,10 @@ var chapterData = [
     question: 'Given a vector field ${\\bf {A}} = {\\bf \\hat{x}} x$, determine the amount of flux flowing out of a cube centered at the origin with its sides extending between $−10 \\mbox{ and } +10$ along $x \\mbox{, } y \\mbox{, and } z$.',
     questionImg: 'ch3/3-10.png',
     choices: [
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = −2000$',
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 0$',
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 4000$',
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 8000$'
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = −2000$',
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = 0$',
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = 4000$',
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = 8000$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-10.png'
@@ -156,10 +156,10 @@ var chapterData = [
     question: 'Given a vector field ${\\bf {A}} = {\\bf \\hat{x}} x$, determine the amount of flux flowing out of a cube centered at the origin with its sides extending between $−10 \\mbox{ and } +10$ along $x \\mbox{, } y \\mbox{, and } z$.',
     questionImg: 'ch3/3-11.png',
     choices: [
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = −2000$',
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 8/3 \\times 10^5$',
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 4/3 \\times 10^5$',
-      '$\\oint_S {\\bf {A}} · d {\\bf {s}} = 2000$'
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = −2000$',
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = 8/3 \\times 10^5$',
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = 4/3 \\times 10^5$',
+      '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = 2000$'
     ],
     answerIndex: 1,
     explanation: 'ch3/3-11.png'
@@ -171,9 +171,9 @@ var chapterData = [
     question: 'A vector field ${\\bf {A}}$ is said to be conservative if:',
     questionImg: null,
     choices: [
-      '${\\bf {\\triangledown · A}} = 0$',
+      '${\\bf {\\triangledown \\cdot A}} = 0$',
       '${\\bf {\\triangledown \\times A}} = 0$',
-      '${\\bf {\\triangledown · A}} = 0$ and ${\\bf {\\triangledown \\times A}} = 0$',
+      '${\\bf {\\triangledown \\cdot A}} = 0$ and ${\\bf {\\triangledown \\times A}} = 0$',
       'None of the above'
     ],
     answerIndex: 1,
@@ -201,10 +201,10 @@ var chapterData = [
     question: 'For a vector field ${\\bf {A}}$ defined over a volume $\\upsilon$ bounded by a surface $S$, the divergence theorem is given by:',
     questionImg: null,
     choices: [
-      '$\\int_\\upsilon \\triangledown · {\\bf {A}} d \\upsilon = \\oint_S ( {\\bf {\\triangledown \\times A}} ) · ds$',
-      '$\\oint_S {\\bf {A}} · ds = \\oint_\\upsilon | {\\bf {A}} | d \\upsilon$',
-      '$\\int_\\upsilon \\triangledown · {\\bf {A}} d \\upsilon = \\oint_S {\\bf {A}} · ds$',
-      '$\\int_S ( {\\bf {\\triangledown \\times A}} ) · ds = \\int | {\\bf {A}} | d \\upsilon$'
+      '$\\int_\\upsilon \\triangledown \\cdot {\\bf {A}} d \\upsilon = \\oint_S ( {\\bf {\\triangledown \\times A}} ) \\cdot ds$',
+      '$\\oint_S {\\bf {A}} \\cdot ds = \\oint_\\upsilon | {\\bf {A}} | d \\upsilon$',
+      '$\\int_\\upsilon \\triangledown \\cdot {\\bf {A}} d \\upsilon = \\oint_S {\\bf {A}} \\cdot ds$',
+      '$\\int_S ( {\\bf {\\triangledown \\times A}} ) \\cdot ds = \\int | {\\bf {A}} | d \\upsilon$'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-14.png'
@@ -216,10 +216,10 @@ var chapterData = [
     question: 'For a vector field ${\\bf {B}}$ defined over a surface $S$ bounded by a contour $C$, Stokes\'s theorem states:',
     questionImg: null,
     choices: [
-      '$\\int_S {\\bf {B}} · ds = \\oint_C {\\bf {B}} · d \\ell$',
-      '$\\int_S {\\bf {\\triangledown}} · ds = \\oint_C {\\bf {B}} · d \\ell$',
-      '$\\int_S {\\bf {B}} · ds = \\oint_C ({\\bf {\\triangledown \\times B}}) · d \\ell$',
-      '$\\int_S ({\\bf {\\triangledown \\times B}}) · ds = \\oint_C {\\bf {B}} · d \\ell$'
+      '$\\int_S {\\bf {B}} \\cdot ds = \\oint_C {\\bf {B}} \\cdot d \\ell$',
+      '$\\int_S {\\bf {\\triangledown}} \\cdot ds = \\oint_C {\\bf {B}} \\cdot d \\ell$',
+      '$\\int_S {\\bf {B}} \\cdot ds = \\oint_C ({\\bf {\\triangledown \\times B}}) \\cdot d \\ell$',
+      '$\\int_S ({\\bf {\\triangledown \\times B}}) \\cdot ds = \\oint_C {\\bf {B}} \\cdot d \\ell$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-15.png'
@@ -246,10 +246,10 @@ var chapterData = [
     question: 'Compute the divergence of the vector field. $${\\bf {A}} = {\\bf \\hat{r}} {\\cos \\phi \\over r^2} + {\\bf {\\hat{\\Phi}}} {\\sin \\phi \\over r^2}$$',
     questionImg: null,
     choices: [
-      '${\\bf {\\triangledown · A}} = 0$',
-      '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^2}$',
-      '${\\bf {\\triangledown · A}} = -{2 \\cos \\phi \\over r^2}$',
-      '${\\bf {\\triangledown · A}} = {2 \\cos \\phi \\over r^3}$'
+      '${\\bf {\\triangledown \\cdot A}} = 0$',
+      '${\\bf {\\triangledown \\cdot A}} = {2 \\cos \\phi \\over r^2}$',
+      '${\\bf {\\triangledown \\cdot A}} = -{2 \\cos \\phi \\over r^2}$',
+      '${\\bf {\\triangledown \\cdot A}} = {2 \\cos \\phi \\over r^3}$'
     ],
     answerIndex: 0,
     explanation: 'ch3/3-17.png'

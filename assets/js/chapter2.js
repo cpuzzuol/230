@@ -171,10 +171,10 @@ var chapterData = [
     question: 'If the reflection coefficient at the load is $| \\Gamma | = 0.5e^{j30^\\circ}$ and the magnitude of the incident voltage wave is $|V^{+}_0|=2 \\mbox{ V}$, what is the magnitude of the voltage maximum on the line?',
     questionImg: null,
     choices: [
-      '$|\\widetilde{V}|_ \\mbox{max} = 3 \\mbox{ V}$',
-      '$|\\widetilde{V}|_ \\mbox{max} = 1 \\mbox{ V}$',
-      '$|\\widetilde{V}|_ \\mbox{max} = 4 \\mbox{ V}$',
-      '$|\\widetilde{V}|_ \\mbox{max} = 1.5 \\mbox{ V}$'
+      '$|\\widetilde{V}|_ \\mathrm{max} = 3 \\mbox{ V}$',
+      '$|\\widetilde{V}|_ \\mathrm{max} = 1 \\mbox{ V}$',
+      '$|\\widetilde{V}|_ \\mathrm{max} = 4 \\mbox{ V}$',
+      '$|\\widetilde{V}|_ \\mathrm{max} = 1.5 \\mbox{ V}$'
     ],
     answerIndex: 0,
     explanation: 'ch2/2-12.png'
@@ -186,10 +186,10 @@ var chapterData = [
     question: 'If the reflection coefficient at the load is $| \\Gamma | = 0.5e^{j30^\\circ}$ and the magnitude of the incident voltage wave is $|V^{+}_0|=2 \\mbox{ V}$, what is the magnitude of the voltage minimum on the line?',
     questionImg: null,
     choices: [
-      '$|\\widetilde{V}|_ \\mbox{min} = 0 \\mbox{ V}$',
-      '$|\\widetilde{V}|_ \\mbox{min} = 0.5 \\mbox{ V}$',
-      '$|\\widetilde{V}|_ \\mbox{min} = 1.5 \\mbox{ V}$',
-      '$|\\widetilde{V}|_ \\mbox{min} = 1 \\mbox{ V}$'
+      '$|\\widetilde{V}|_ \\mathrm{min} = 0 \\mbox{ V}$',
+      '$|\\widetilde{V}|_ \\mathrm{min} = 0.5 \\mbox{ V}$',
+      '$|\\widetilde{V}|_ \\mathrm{min} = 1.5 \\mbox{ V}$',
+      '$|\\widetilde{V}|_ \\mathrm{min} = 1 \\mbox{ V}$'
     ],
     answerIndex: 3,
     explanation: 'ch2/2-13.png'
@@ -201,10 +201,10 @@ var chapterData = [
     question: 'If the reflection coefficient at the load is $| \\Gamma | = 0.5e^{j30^\\circ}$ and $\\lambda = 60 \\mbox{ cm}$, what is the location of the voltage maximum nearest to the load?',
     questionImg: null,
     choices: [
-      '$d_\\mbox{max} = 1 \\mbox{ cm}$',
-      '$d_\\mbox{max} = 2.5 \\mbox{ cm}$',
-      '$d_\\mbox{max} = 5 \\mbox{ cm}$',
-      '$d_\\mbox{max} = 10 \\mbox{ cm}$'
+      '$d_\\mathrm{max} = 1 \\mbox{ cm}$',
+      '$d_\\mathrm{max} = 2.5 \\mbox{ cm}$',
+      '$d_\\mathrm{max} = 5 \\mbox{ cm}$',
+      '$d_\\mathrm{max} = 10 \\mbox{ cm}$'
     ],
     answerIndex: 1,
     explanation: 'ch2/2-14.png'
@@ -216,10 +216,10 @@ var chapterData = [
     question: 'If the reflection coefficient at the load is $| \\Gamma | = 0.5e^{-j30^\\circ}$ and $\\lambda = 60 \\mbox{ cm}$, what is the location of the voltage maximum nearest to the load?',
     questionImg: null,
     choices: [
-      '$d_\\mbox{max} = 55 \\mbox{ cm}$',
-      '$d_\\mbox{max} = 27.5 \\mbox{ cm}$',
-      '$d_\\mbox{max} = 18.75 \\mbox{ cm}$',
-      '$d_\\mbox{max} = 36 \\mbox{ cm}$'
+      '$d_\\mathrm{max} = 55 \\mbox{ cm}$',
+      '$d_\\mathrm{max} = 27.5 \\mbox{ cm}$',
+      '$d_\\mathrm{max} = 18.75 \\mbox{ cm}$',
+      '$d_\\mathrm{max} = 36 \\mbox{ cm}$'
     ],
     answerIndex: 1,
     explanation: 'ch2/2-15.png'
@@ -246,10 +246,10 @@ var chapterData = [
     question: 'A $100 \\mbox{ \\Omega}$ lossless transmission line is terminated in a short circuit. The line is operated at $f = 2 \\mbox{ GHz}$ and the wavelength on the line is $\\lambda = 8$ cm. What should the length of the line be so that its input impedance is equivalent to that of an inductor with $L_{eq} = (25/ \\pi ) \\mbox{ nH}$?',
     questionImg: null,
     choices: [
-      '$l = 1$ cm',
-      '$l = 2$ cm',
-      '$l = 0.5$ cm',
-      '$l = 4$ cm'
+      '$l = 1 \\mbox{ cm}$',
+      '$l = 2 \\mbox{ cm}$',
+      '$l = 0.5 \\mbox{ cm}$',
+      '$l = 4 \\mbox{ cm}$'
     ],
     answerIndex: 0,
     explanation: 'ch2/2-17.png'
@@ -258,13 +258,13 @@ var chapterData = [
     number: 18,
     type: 'multiple',
     topic: 'Input Impedance',
-    question: 'The wavelength on a $75 \\mbox{ } \\Omega$ transmission line is 6 cm and the line length is 9 cm. If the line is terminated in $Z_L = 150 \\mbox{ } \\Omega$, what is the input impedance?',
+    question: 'The wavelength on a $75 \\mbox{ } \\Omega$ transmission line is $6 \\mbox{ cm}$ and the line length is $9 \\mbox{ cm}$. If the line is terminated in $Z_{ \\mathrm{L} } = 150 \\mbox{ } \\Omega$, what is the input impedance?',
     questionImg: null,
     choices: [
-      '$Z_{in} = 50 \\mbox{ } \\Omega$',
-      '$Z_{in} = 75 \\mbox{ } \\Omega$',
-      '$Z_{in} = 100 \\mbox{ } \\Omega$',
-      '$Z_{in} = 150 \\mbox{ } \\Omega$'
+      '$Z_{ \\mathrm{in} } = 50 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 75 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 100 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 150 \\mbox{ } \\Omega$'
     ],
     answerIndex: 3,
     explanation: 'ch2/2-18.png'
@@ -273,13 +273,13 @@ var chapterData = [
     number: 19,
     type: 'multiple',
     topic: 'Input Impedance',
-    question: 'The wavelength on a $75 \\mbox{ } \\Omega$ transmission line is 6 cm and the line length is 7.5 cm. If the line is terminated in $Z_L = 150 \\mbox{ } \\Omega$, what is the input impedance?',
+    question: 'The wavelength on a $75 \\mbox{ } \\Omega$ transmission line is 6 cm and the line length is $7.5 \\mbox{ cm}$. If the line is terminated in $Z_{ \\mathrm{L} } = 150 \\mbox{ } \\Omega$, what is the input impedance?',
     questionImg: null,
     choices: [
-      '$Z_{in} = 75 \\mbox{ cm}$',
-      '$Z_{in} = 37.5 \\mbox{ cm}$',
-      '$Z_{in} = 10 \\mbox{ cm}$',
-      '$Z_{in} = 150 \\mbox{ cm}$'
+      '$Z_{ \\mathrm{in} } = 75 \\mbox{ cm}$',
+      '$Z_{ \\mathrm{in} } = 37.5 \\mbox{ cm}$',
+      '$Z_{ \\mathrm{in} } = 10 \\mbox{ cm}$',
+      '$Z_{ \\mathrm{in} } = 150 \\mbox{ cm}$'
     ],
     answerIndex: 1,
     explanation: 'ch2/2-19.png'
@@ -288,7 +288,7 @@ var chapterData = [
     number: 20,
     type: 'multiple',
     topic: 'Transmitted Power',
-    question: 'A $100 \\mbox{ } \\Omega$ lossless transmission line is terminated in $Z_L = 150 \\mbox{ } \\Omega$. What fraction of the incident average power is absorbed by the load?',
+    question: 'A $100 \\mbox{ } \\Omega$ lossless transmission line is terminated in $Z_{ \\mathrm{L} } = 150 \\mbox{ } \\Omega$. What fraction of the incident average power is absorbed by the load?',
     questionImg: null,
     choices: [
       'Power fraction = 0.2',
@@ -303,13 +303,13 @@ var chapterData = [
     number: 21,
     type: 'multiple',
     topic: 'Input Impedance',
-    question: 'For the circuit shown, what is $Z_{in}$?',
+    question: 'For the circuit shown, what is $Z_{ \\mathrm{in} }$?',
     questionImg: 'ch2/2-21.png',
     choices: [
-      '$Z_{in} = 37.5 \\mbox{ } \\Omega$',
-      '$Z_{in} = 75 \\mbox{ } \\Omega$',
-      '$Z_{in} = 50 \\mbox{ } \\Omega$',
-      '$Z_{in} = 100 \\mbox{ } \\Omega$'
+      '$Z_{ \\mathrm{in} } = 37.5 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 75 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 50 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 100 \\mbox{ } \\Omega$'
     ],
     answerIndex: 0,
     explanation: 'ch2/2-21.png'
@@ -318,13 +318,13 @@ var chapterData = [
     number: 22,
     type: 'multiple',
     topic: 'Input Impedance',
-    question: 'Find $Z_{in}$.',
+    question: 'Find $Z_{ \\mathrm{in} }$.',
     questionImg: 'ch2/2-22.png',
     choices: [
-      '$Z_{in} = 100 \\mbox{ } \\Omega$',
-      '$Z_{in} = 200 \\mbox{ } \\Omega$',
-      '$Z_{in} = 400 \\mbox{ } \\Omega$',
-      '$Z_{in} = 800 \\mbox{ } \\Omega$'
+      '$Z_{ \\mathrm{in} } = 100 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 200 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 400 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 800 \\mbox{ } \\Omega$'
     ],
     answerIndex: 2,
     explanation: 'ch2/2-22.png'
@@ -333,7 +333,7 @@ var chapterData = [
     number: 23,
     type: 'multiple',
     topic: 'Impedance',
-    question: 'On a lossless transmission line terminated in $Z_L = 200 \\mbox{ } \\Omega$, the SWR is 2.0. One possible value is $Z_0$ is $100 \\mbox{ } \\Omega$. What is the other possible value?',
+    question: 'On a lossless transmission line terminated in $Z_{ \\mathrm{L} } = 200 \\mbox{ } \\Omega$, the SWR is 2.0. One possible value is $Z_0$ is $100 \\mbox{ } \\Omega$. What is the other possible value?',
     questionImg: null,
     choices: [
       '$Z_0 = 200 \\mbox{ } \\Omega$',
@@ -351,10 +351,10 @@ var chapterData = [
     question: 'A $25 \\mbox{ } \\Omega$ lossless transmission line is terminated in a short circuit. Use a Smith-Chart-Module to determine the input impedance at a distance of $0.8 \\mbox{ } \\lambda$ from the load.',
     questionImg: null,
     choices: [
-      '$Z_{in} = 100 \\mbox{ } \\Omega$',
-      '$Z_{in} = j100 \\mbox{ } \\Omega$',
-      '$Z_{in} = −j77 \\mbox{ } \\Omega$',
-      '$Z_{in} = −j150 \\mbox{ } \\Omega$'
+      '$Z_{ \\mathrm{in} } = 100 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = j100 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = −j77 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = −j150 \\mbox{ } \\Omega$'
     ],
     answerIndex: 2,
     explanation: 'ch2/2-24.png'
@@ -363,13 +363,13 @@ var chapterData = [
     number: 25,
     type: 'multiple',
     topic: 'Load Impedance',
-    question: 'A lossless $200 \\mbox{ } \\Omega$ transmission line $3 \\lambda /8$ in length is terminated in an unknown impedance. If the input impedance is $Z_{in} = −j5 \\mbox{ } \\Omega$, use a Smith-Chart Module to determine $Z_L$.',
+    question: 'A lossless $200 \\mbox{ } \\Omega$ transmission line $3 \\lambda /8$ in length is terminated in an unknown impedance. If the input impedance is $Z_{in} = −j5 \\mbox{ } \\Omega$, use a Smith-Chart Module to determine $Z_{ \\mathrm{L} }$.',
     questionImg: null,
     choices: [
-      '$Z_L = j190 \\mbox{ } \\Omega$',
-      '$Z_L = 190 \\mbox{ } \\Omega$',
-      '$Z_L = −j190 \\mbox{ } \\Omega$',
-      '$Z_L = −j95 \\mbox{ } \\Omega$'
+      '$Z_\\mathrm{L} = j190 \\mbox{ } \\Omega$',
+      '$Z_\\mathrm{L} = 190 \\mbox{ } \\Omega$',
+      '$Z_\\mathrm{L} = −j190 \\mbox{ } \\Omega$',
+      '$Z_\\mathrm{L} = −j95 \\mbox{ } \\Omega$'
     ],
     answerIndex: 0,
     explanation: 'ch2/2-25.png'
@@ -380,13 +380,13 @@ var chapterData = [
     topic: 'Input Impedance',
     question: 'At an operating frequency of $5 \\mbox{ GHz}$, a $50 \\mbox{ W}$ lossless coaxial line with insulating\n' +
       'material having a relative permittivity $\\epsilon_r = 2.25$ is terminated in an antenna with\n' +
-      'impedance $Z_L = 100 \\mbox{ } \\Omega$. The line length is $31 \\mbox{ cm}$. Determine the input impedance.',
+      'impedance $Z_{ \\mathrm{L} } = 100 \\mbox{ } \\Omega$. The line length is $31 \\mbox{ cm}$. Determine the input impedance.',
     questionImg: null,
     choices: [
-      '$Z_{in} = 50 \\mbox{ } \\Omega$',
-      '$Z_{in} = 75 \\mbox{ } \\Omega$',
-      '$Z_{in} = 25 \\mbox{ } \\Omega$',
-      '$Z_{in} = 100 \\mbox{ } \\Omega$'
+      '$Z_{ \\mathrm{in} } = 50 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 75 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 25 \\mbox{ } \\Omega$',
+      '$Z_{ \\mathrm{in} } = 100 \\mbox{ } \\Omega$'
     ],
     answerIndex: 2,
     explanation: 'ch2/2-26.png'
@@ -395,7 +395,7 @@ var chapterData = [
     number: 27,
     type: 'multiple',
     topic: 'Quarter-Wave Transformer',
-    question: 'A lossless $25 \\mbox{ } \\Omega$ line is terminated in a load impedance $Z_L = (50 − j100) \\mbox{ } \\Omega$. To\n' +
+    question: 'A lossless $25 \\mbox{ } \\Omega$ line is terminated in a load impedance $Z_{ \\mathrm{L} } = (50 − j100) \\mbox{ } \\Omega$. To\n' +
       'eliminate reflections, a quarter-wave transformer with impedance $Z_{02} = 7.75 \\mbox{ } \\Omega$ is\n' +
       'inserted at a distance $d$ from the load. If $\\lambda = 30 \\mbox{ cm}$, what is the value of $d$?',
     questionImg: null,
@@ -412,7 +412,7 @@ var chapterData = [
     number: 28,
     type: 'multiple',
     topic: 'Quarter-Wave Transformer',
-    question: 'A lossless $25 \\mbox{ } \\Omega$ line is terminated in a load impedance $Z_L = (50 − j100) \\mbox{ } \\Omega$. To\n' +
+    question: 'A lossless $25 \\mbox{ } \\Omega$ line is terminated in a load impedance $Z_{ \\mathrm{L} } = (50 − j100) \\mbox{ } \\Omega$. To\n' +
       'eliminate reflections, a quarter-wave transformer was inserted at a distance of\n' +
       '$6.5 \\mbox{ cm}$ from the load. If $\\lambda = 30 \\mbox{ cm}$, what is the characteristic impedance of the\n' +
       'quarter-wave transformer?',
@@ -430,7 +430,7 @@ var chapterData = [
     number: 29,
     type: 'multiple',
     topic: 'Matching',
-    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_L = (150 − j40) \\mbox{ } \\Omega$\n' +
+    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_{ \\mathrm{L} } = (150 − j40) \\mbox{ } \\Omega$\n' +
       'using a shorted stub. For perfect matching, it was determined that the stub should\n' +
       'be inserted at $d_1 = 0.104 \\lambda$ from the load. What should the length of the stub $l_1$ be?',
     questionImg: 'ch2/2-29.png',
@@ -447,7 +447,7 @@ var chapterData = [
     number: 30,
     type: 'multiple',
     topic: 'Matching',
-    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_L = (150 − j40) \\mbox{ } \\Omega$\n' +
+    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_{ \\mathrm{L} } = (150 − j40) \\mbox{ } \\Omega$\n' +
       'using a shorted stub. For perfect matching, it was determined that the stub should\n' +
       'be inserted at $d_1$ from the load and its length should be $l_1 = 0.173 \\lambda$. What is the value of $d_1$?',
     questionImg: null,
@@ -464,7 +464,7 @@ var chapterData = [
     number: 31,
     type: 'multiple',
     topic: 'Impedance Matching',
-    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_L = (200 + j100) \\mbox{ } \\Omega$\n' +
+    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_{ \\mathrm{L} } = (200 + j100) \\mbox{ } \\Omega$\n' +
       'using a shorted stub. For perfect matching, it was determined that the stub should\n' +
       'be inserted at $d_1 = 0.2 \\lambda$ from the load. What should the length of the stub $l_1$ be?',
     questionImg: 'ch2/2-31.png',
@@ -481,7 +481,7 @@ var chapterData = [
     number: 32,
     type: 'multiple',
     topic: 'Impedance Matching',
-    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_L = (200 + j100) \\mbox{ } \\Omega$\n' +
+    question: 'A $100 \\mbox{ } \\Omega$ lossless line is to be matched to an antenna with $Z_{ \\mathrm{L} } = (200 + j100) \\mbox{ } \\Omega$\n' +
       'using a shorted stub. For perfect matching, it was determined that the stub should\n' +
       'be inserted at $d_1$ from the load and its length should be $l_1 = 0.125 \\lambda$. What is the\n' +
       'value of $d_1$?',
@@ -521,10 +521,10 @@ var chapterData = [
       'and $\\epsilon_r = 9$. Determine the load impedance.',
     questionImg: 'ch2/2-34.png',
     choices: [
-      '$Z_L = 25 \\mbox{ } \\Omega$',
-      '$Z_L = 100 \\mbox{ } \\Omega$',
-      '$Z_L = 150 \\mbox{ } \\Omega$',
-      '$Z_L = 50 \\mbox{ } \\Omega$'
+      '$Z_\\mathrm{L} = 25 \\mbox{ } \\Omega$',
+      '$Z_\\mathrm{L} = 100 \\mbox{ } \\Omega$',
+      '$Z_\\mathrm{L} = 150 \\mbox{ } \\Omega$',
+      '$Z_\\mathrm{L} = 50 \\mbox{ } \\Omega$'
     ],
     answerIndex: 3,
     explanation: 'ch2/2-34.png'

@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03359606-a343-4ac8-9b9f-da952ccf8ee5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/chapter10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/chapter9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter9.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/chapter8.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter1.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter3.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter4.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/chapter5.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/chapter5.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,53 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/chapter8.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/chapter10.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
-              <folding>
-                <element signature="e#83#89#0" expanded="true" />
-                <element signature="e#89#95#0" expanded="true" />
-                <element signature="e#95#101#0" expanded="true" />
-                <element signature="e#101#107#0" expanded="true" />
-                <element signature="e#107#113#0" expanded="true" />
-                <element signature="e#113#119#0" expanded="true" />
-                <element signature="e#119#125#0" expanded="true" />
-                <element signature="e#125#131#0" expanded="true" />
-                <element signature="e#131#137#0" expanded="true" />
-                <element signature="e#137#143#0" expanded="true" />
-                <element signature="e#34#40#0" expanded="true" />
-                <element signature="e#40#46#0" expanded="true" />
-                <element signature="e#46#52#0" expanded="true" />
-                <element signature="e#52#58#0" expanded="true" />
-                <element signature="e#58#64#0" expanded="true" />
-                <element signature="e#64#70#0" expanded="true" />
-                <element signature="e#70#76#0" expanded="true" />
-                <element signature="e#76#82#0" expanded="true" />
-                <element signature="e#82#88#0" expanded="true" />
-                <element signature="e#88#94#0" expanded="true" />
-                <element signature="e#128#134#0" expanded="true" />
-                <element signature="e#134#140#0" expanded="true" />
-                <element signature="e#140#146#0" expanded="true" />
-                <element signature="e#146#152#0" expanded="true" />
-                <element signature="e#152#158#0" expanded="true" />
-                <element signature="e#202#208#0" expanded="true" />
-                <element signature="e#208#214#0" expanded="true" />
-                <element signature="e#214#220#0" expanded="true" />
-                <element signature="e#220#226#0" expanded="true" />
-                <element signature="e#226#232#0" expanded="true" />
-                <element signature="e#232#238#0" expanded="true" />
-                <element signature="e#238#244#0" expanded="true" />
-                <element signature="e#244#250#0" expanded="true" />
-                <element signature="e#250#256#0" expanded="true" />
-                <element signature="e#256#262#0" expanded="true" />
-                <element signature="e#318#324#0" expanded="true" />
-                <element signature="e#393#399#0" expanded="true" />
-                <element signature="e#330#336#0" expanded="true" />
-                <element signature="e#405#411#0" expanded="true" />
-                <element signature="e#411#417#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="490">
+              <caret line="117" column="56" lean-forward="true" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/chapter9.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="163" column="4" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -75,11 +50,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tries</find>
-      <find>radios</find>
-      <find>return</find>
-      <find>checkAnswer</find>
-      <find>console.log</find>
       <find>v-img</find>
       <find>headline</find>
       <find>redo this</find>
@@ -102,6 +72,14 @@
       <find>chapterdata</find>
       <find>7-</find>
       <find>ch7</find>
+      <find>ch8</find>
+      <find>8-</find>
+      <find>9-</find>
+      <find>ch9</find>
+      <find>input imped</find>
+      <find>Z_L</find>
+      <find>W_m</find>
+      <find>matching</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -118,6 +96,13 @@
       <replace>7-</replace>
       <replace>8-</replace>
       <replace>ch8</replace>
+      <replace>ch9</replace>
+      <replace>9-</replace>
+      <replace>10-</replace>
+      <replace>ch10</replace>
+      <replace>Z__{ \\mathrm{L} }</replace>
+      <replace>Z_{ \\mathrm{L} }</replace>
+      <replace>W_{ \\mathrm{m} }</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -133,14 +118,9 @@
         <option value="$PROJECT_DIR$/chapter1.phtml" />
         <option value="$PROJECT_DIR$/chapter2.phtml" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/assets/js/chapter1.js" />
         <option value="$PROJECT_DIR$/chapter3.phtml" />
         <option value="$PROJECT_DIR$/chapter4.phtml" />
-        <option value="$PROJECT_DIR$/assets/js/chapter3.js" />
-        <option value="$PROJECT_DIR$/assets/js/chapter2.js" />
-        <option value="$PROJECT_DIR$/assets/js/chapter4.js" />
         <option value="$PROJECT_DIR$/chapter5.phtml" />
-        <option value="$PROJECT_DIR$/assets/js/chapter5.js" />
         <option value="$PROJECT_DIR$/chapter6.phtml" />
         <option value="$PROJECT_DIR$/assets/js/chapter6.js" />
         <option value="$PROJECT_DIR$/chapter7.phtml" />
@@ -150,6 +130,15 @@
         <option value="$PROJECT_DIR$/footer.phtml" />
         <option value="$PROJECT_DIR$/chapter8.phtml" />
         <option value="$PROJECT_DIR$/assets/js/chapter8.js" />
+        <option value="$PROJECT_DIR$/chapter9.phtml" />
+        <option value="$PROJECT_DIR$/chapter10.phtml" />
+        <option value="$PROJECT_DIR$/assets/js/chapter1.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter2.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter3.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter4.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter5.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter10.js" />
+        <option value="$PROJECT_DIR$/assets/js/chapter9.js" />
       </list>
     </option>
   </component>
@@ -211,19 +200,23 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,18 +250,20 @@
       <workItem from="1552698518462" duration="4963000" />
       <workItem from="1553114415351" duration="7393000" />
       <workItem from="1553291734437" duration="797000" />
-      <workItem from="1553482376021" duration="3125000" />
+      <workItem from="1553482376021" duration="3260000" />
+      <workItem from="1553976972261" duration="13000" />
+      <workItem from="1553977025564" duration="8272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81599000" />
+    <option name="totallyTimeSpent" value="90019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14735337" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15164521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -371,34 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4981">
-          <caret line="293" column="42" selection-start-line="293" selection-start-column="38" selection-end-line="293" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="339" column="31" lean-forward="true" selection-start-line="339" selection-start-column="31" selection-end-line="339" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-283">
-          <caret line="233" column="22" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1139">
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -406,13 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/chapter5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -477,16 +437,16 @@
         <state relative-caret-position="488">
           <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
           <folding>
-            <element signature="e#83#89#0" expanded="true" />
-            <element signature="e#89#95#0" expanded="true" />
-            <element signature="e#95#101#0" expanded="true" />
-            <element signature="e#101#107#0" expanded="true" />
-            <element signature="e#107#113#0" expanded="true" />
-            <element signature="e#113#119#0" expanded="true" />
-            <element signature="e#119#125#0" expanded="true" />
-            <element signature="e#125#131#0" expanded="true" />
-            <element signature="e#131#137#0" expanded="true" />
-            <element signature="e#137#143#0" expanded="true" />
+            <element signature="e#87#93#0" expanded="true" />
+            <element signature="e#93#99#0" expanded="true" />
+            <element signature="e#99#105#0" expanded="true" />
+            <element signature="e#105#111#0" expanded="true" />
+            <element signature="e#111#117#0" expanded="true" />
+            <element signature="e#117#123#0" expanded="true" />
+            <element signature="e#123#129#0" expanded="true" />
+            <element signature="e#129#135#0" expanded="true" />
+            <element signature="e#135#141#0" expanded="true" />
+            <element signature="e#141#147#0" expanded="true" />
             <element signature="e#34#40#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#46#52#0" expanded="true" />
@@ -497,11 +457,11 @@
             <element signature="e#76#82#0" expanded="true" />
             <element signature="e#82#88#0" expanded="true" />
             <element signature="e#88#94#0" expanded="true" />
-            <element signature="e#128#134#0" expanded="true" />
-            <element signature="e#134#140#0" expanded="true" />
-            <element signature="e#140#146#0" expanded="true" />
-            <element signature="e#146#152#0" expanded="true" />
-            <element signature="e#152#158#0" expanded="true" />
+            <element signature="e#216#222#0" expanded="true" />
+            <element signature="e#222#228#0" expanded="true" />
+            <element signature="e#228#234#0" expanded="true" />
+            <element signature="e#234#240#0" expanded="true" />
+            <element signature="e#240#246#0" expanded="true" />
             <element signature="e#202#208#0" expanded="true" />
             <element signature="e#208#214#0" expanded="true" />
             <element signature="e#214#220#0" expanded="true" />
@@ -512,12 +472,75 @@
             <element signature="e#244#250#0" expanded="true" />
             <element signature="e#250#256#0" expanded="true" />
             <element signature="e#256#262#0" expanded="true" />
-            <element signature="e#318#324#0" expanded="true" />
-            <element signature="e#393#399#0" expanded="true" />
-            <element signature="e#330#336#0" expanded="true" />
-            <element signature="e#405#411#0" expanded="true" />
-            <element signature="e#411#417#0" expanded="true" />
+            <element signature="e#396#402#0" expanded="true" />
+            <element signature="e#402#408#0" expanded="true" />
+            <element signature="e#408#414#0" expanded="true" />
+            <element signature="e#414#420#0" expanded="true" />
+            <element signature="e#420#426#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter10.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter9.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="300" column="31" selection-start-line="300" selection-start-column="31" selection-end-line="300" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1061">
+          <caret line="372" column="23" selection-start-line="372" selection-start-column="23" selection-end-line="372" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="202" column="14" lean-forward="true" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="432" column="109" selection-start-line="432" selection-start-column="93" selection-end-line="432" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="117" column="56" lean-forward="true" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/chapter9.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="163" column="4" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -66,10 +66,10 @@ var chapterData = [
     question: 'A 2.8 kHz acoustic wave travels in water at a speed of 1.4 km/s.What is the wave\'s wavelength?',
     questionImg: null,
     choices: [
-      '$\\lambda = 0.1 m$',
-      '$\\lambda = 0.25 m$',
-      '$\\lambda = 0.5 m$',
-      '$\\lambda = 2 m$'
+      '$\\lambda = 0.1 \\mbox{ m}$',
+      '$\\lambda = 0.25 \\mbox{ m}$',
+      '$\\lambda = 0.5 \\mbox{ m}$',
+      '$\\lambda = 2 \\mbox{ m}$'
     ],
     answerIndex: 2,
     explanation: 'ch1/1-5.png'
@@ -96,10 +96,10 @@ var chapterData = [
     question: 'If $\\phi =\\pi/4$ and $T = 16s$, what is $\\Delta t$?',
     questionImg: 'ch1/1-7.png',
     choices: [
-      '$\\Delta t = 2s$',
-      '$\\Delta t = 4s$',
-      '$\\Delta t = 6s$',
-      '$\\Delta t = 8s$'
+      '$\\Delta t = 2 \\mbox{ s}$',
+      '$\\Delta t = 4 \\mbox{ s}$',
+      '$\\Delta t = 6 \\mbox{ s}$',
+      '$\\Delta t = 8 \\mbox{ s}$'
     ],
     answerIndex: 0,
     explanation: 'ch1/1-7.png'
@@ -112,10 +112,10 @@ var chapterData = [
       'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.6 m$?',
     questionImg: null,
     choices: [
-      '$4m$',
-      '$1.2m$',
-      '$0.6m$',
-      '$2m$'
+      '$4 \\mbox{ m}$',
+      '$1.2 \\mbox{ m}$',
+      '$0.6 \\mbox{ m}$',
+      '$2 \\mbox{ m}$'
     ],
     answerIndex: 0,
     explanation: 'ch1/1-8.png'
@@ -128,10 +128,10 @@ var chapterData = [
       'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.8 m$?',
     questionImg: null,
     choices: [
-      '$4m$',
-      '$1.2m$',
-      '$0.6m$',
-      '$2m$'
+      '$4 \\mbox{ m}$',
+      '$1.2 \\mbox{ m}$',
+      '$0.6 \\mbox{ m}$',
+      '$2 \\mbox{ m}$'
     ],
     answerIndex: 0,
     explanation: 'ch1/1-9.png'
@@ -143,10 +143,10 @@ var chapterData = [
     question: 'The visible part of the EM spectrum covers the wavelength range:',
     questionImg: null,
     choices: [
-      '1–4 μm',
-      '0.4–4 μm',
-      '0.4–0.7 μm',
-      '0.1–0.4 μm'
+      '$1–4 \\mbox{ } \\mathrm{\\mu m}$',
+      '$0.4–4 \\mbox{ } \\mathrm{\\mu m}$',
+      '$0.4–0.7 \\mbox{ } \\mathrm{\\mu m}$',
+      '$0.1–0.4 \\mbox{ } \\mathrm{\\mu m}$'
     ],
     answerIndex: 2,
     explanation: 'ch1/1-10.png'
@@ -263,10 +263,10 @@ var chapterData = [
     question: 'For an ac voltage at an angular frequency $\\omega$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = −5e^{j30^\\circ}$ is:',
     questionImg: null,
     choices: [
-      '$\\nu (t) = 5cos(\\omega t +150^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −30^\\circ)$',
-      '$\\nu (t) = 5cos(\\omega t −150^\\circ)$',
-      '$\\nu (t) = −5cos(\\omega t +60^\\circ)$'
+      '$\\nu (t) = 5 \\mathrm{cos} (\\omega t +150^\\circ)$',
+      '$\\nu (t) = 5 \\mathrm{cos} (\\omega t −30^\\circ)$',
+      '$\\nu (t) = 5 \\mathrm{cos} (\\omega t −150^\\circ)$',
+      '$\\nu (t) = −5 \\mathrm{cos} (\\omega t +60^\\circ)$'
     ],
     answerIndex: 2,
     explanation: 'ch1/1-18.png'
@@ -278,10 +278,10 @@ var chapterData = [
     question: 'For an ac voltage at an angular frequency $\\omega = 377 rad/s$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
     questionImg: null,
     choices: [
-      '$\\nu (t) = 3cos(377t +30^\\circ)$',
-      '$\\nu (t) = 3cos(377t +150^\\circ)$',
-      '$\\nu (t) = −3cos(377t −30^\\circ)$',
-      '$\\nu (t) = −3sin(377t −120^\\circ)$'
+      '$\\nu (t) = 3 \\mathrm{cos} (377t +30^\\circ)$',
+      '$\\nu (t) = 3 \\mathrm{cos} (377t +150^\\circ)$',
+      '$\\nu (t) = −3 \\mathrm{cos} (377t −30^\\circ)$',
+      '$\\nu (t) = −3 \\mathrm{sin} (377t −120^\\circ)$'
     ],
     answerIndex: 3,
     explanation: 'ch1/1-19.png'
@@ -295,10 +295,10 @@ var chapterData = [
       'What is the wavelength of the wave?',
     questionImg: null,
     choices: [
-      '$\\lambda = 0.2 m$',
-      '$\\lambda = 0.25 m$',
-      '$\\lambda = 0.4 m$',
-      '$\\lambda = 4 m$'
+      '$\\lambda = 0.2 \\mbox{ m}$',
+      '$\\lambda = 0.25 \\mbox{ m}$',
+      '$\\lambda = 0.4 \\mbox{ m}$',
+      '$\\lambda = 4 \\mbox{ m}$'
     ],
     answerIndex: 1,
     explanation: 'ch1/1-20.png'
