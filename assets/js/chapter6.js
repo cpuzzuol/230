@@ -23,8 +23,8 @@ var chapterData = [
     choices: [
       'Compute the magnetic flux through the loop surface.',
       'Compute the induced field ${ \\bf{B} }_\\mathrm{ind}$.',
-      'Determine the direction of I.',
-      'Determine the internal resistance Ri.'
+      'Determine the direction of $I$.',
+      'Determine the internal resistance $R_i$.'
     ],
     answerIndex: 2,
     explanation: 'ch6/6-2.png'
@@ -64,9 +64,9 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'TV Antenna',
-    question: 'A circular-loop TV antenna with $0.02 \\mbox{-} m^2$ area is in the presence of a uniformamplitude\n' +
-      '300 MHz signal. When oriented for maximum response, the loop\n' +
-      'develops an emf with a peak value of 15 (mV). What is the peak magnitude $B_0$\n' +
+    question: 'A circular-loop TV antenna with $0.02 \\mbox{-} \\mathrm{m^2}$ area is in the presence of a uniformamplitude\n' +
+      '$300 \\mbox{ MHz}$ signal. When oriented for maximum response, the loop\n' +
+      'develops an emf with a peak value of $15 \\mbox{ (mV)}$. What is the peak magnitude $B_0$\n' +
       'of the incident wave?',
     questionImg: 'ch6/6-5.png',
     choices: [
@@ -137,7 +137,7 @@ var chapterData = [
     number: 9,
     type: 'multiple',
     topic: 'EM Potentials',
-    question: 'The magnetic field in a dielectric material with $\\epsilon = 9 \\epsilon_0$, $\\mu = \\mu_0$, and $s = 0$ is given by<br><br>\n' +
+    question: 'The magnetic field in a dielectric material with $\\epsilon = 9 \\epsilon_0$, $\\mu = \\mu_0$, and $\\sigma = 0$ is given by<br><br>\n' +
       '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{H} }(y, t) = { \\bf{ \\hat{x} } } 5 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y)$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{A/m} )$.<br><br>\n' +
       'Find the associated electric field $\\bf{E}$.',
     questionImg: null,
@@ -162,7 +162,7 @@ var chapterData = [
       '${ \\bf{H} } (z, t) = { \\bf{ \\hat{x} } } 12 \\mathrm{cos} (3 \\times 10^8t−z) + { \\bf{ \\hat{y} } } 8 \\mathrm{cos} (3 \\times 10^8t−z) ( \\mathrm{A/m} )$',
       '${ \\bf{H} } (z, t) = { \\bf{ -\\hat{x} } } 8 \\mathrm{cos} (3 \\times 10^8t−z) + { \\bf{ \\hat{y} } } 10.6 \\mathrm{cos} (3 \\times 10^8t−z) ( \\mathrm{mA/m} )$',
       '${ \\bf{H} } (z, t) = { \\bf{ -\\hat{x} } } 8 \\mathrm{sin} (3 \\times 10^8t−z) + { \\bf{ \\hat{y} } } 10.6 \\mathrm{cos} (3 \\times 10^8t−z) ( \\mathrm{mA/m} )$',
-      '${ \\bf{H} } (z, t) = { \\bf{ \\hat{x} } } 16 \\mathrm{cos} (3 \\times 10^8t−z) + 2y \\mathrm{cos} (3 \\times 10^8t−z) ( \\mathrm{mA/m} )$'
+      '${ \\bf{H} } (z, t) = { \\bf{ \\hat{x} } } 16 \\mathrm{cos} (3 \\times 10^8t−z) + { \\bf{ \\hat{y} } } 2 \\mathrm{cos} (3 \\times 10^8t−z) ( \\mathrm{mA/m} )$'
     ],
     answerIndex: 2,
     explanation: 'ch6/6-10.png'

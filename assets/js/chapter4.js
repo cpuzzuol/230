@@ -34,8 +34,8 @@ var chapterData = [
     type: 'multiple',
     topic: 'Electric Charge',
     question: 'Consider 2 circular disks of electric charge:<br><br>' +
-      'Disk 1: $\\rho_{s_1} = \\rho_0r$ (linear variation with r)<br><br>' +
-      'Disk 2: $\\rho_{s_2} = \\rho_0r^2$ (quadratic variation with r)<br><br>' +
+      'Disk 1: $\\rho_{s_1} = \\rho_0r$ (linear variation with $r$)<br><br>' +
+      'Disk 2: $\\rho_{s_2} = \\rho_0r^2$ (quadratic variation with $r$)<br><br>' +
       'Both disks have a radius of 1 m and $\\rho_0$ = constant. What is the ratio of the total amount of charge $Q_1$ on disk 1 to $Q_2$ on disk 2?',
     questionImg: null,
     choices: [
@@ -52,7 +52,7 @@ var chapterData = [
     type: 'multiple',
     topic: 'Electric Charge',
     question: 'Consider 2 circular disks of electric charge:<br><br>' +
-      'Disk 1: $\\rho_{s_1} = \\rho_0r$ with radius $a_1 = 1 m$<br><br>' +
+      'Disk 1: $\\rho_{s_1} = \\rho_0r$ with radius $a_1 = 1 \\mbox{ m}$<br><br>' +
       'Disk 2: $\\rho_{s_2} = \\rho_0r^2$ with radius $a_2 = \\mbox{ unknown }$<br><br>' +
       'Here, $\\rho_0$ = constant. What should the value of $a_2$ be so that the two disks have the same amount of total charge?',
     questionImg: null,
@@ -69,7 +69,7 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'Electric Charge',
-    question: 'Find the total charge contained in a cylindrical volume defined by $r \\leq 3 m$ and $0 \\leq z \\leq 2 m$ if $\\rho_v = 20rz ( \\mbox{m} C/ \\mbox{m}^3 )$.',
+    question: 'Find the total charge contained in a cylindrical volume defined by $r \\leq 3 \\mbox{ m}$ and $0 \\leq z \\leq 2 \\mbox{ m}$ if $\\rho_v = 20rz ( \\mbox{m} C/ \\mbox{m}^3 )$.',
     questionImg: null,
     choices: [
       '$Q = 0.4$ Coulomb',
@@ -349,10 +349,10 @@ var chapterData = [
       'a distance $r$ from the line of charge.',
     questionImg: 'ch4/4-23.png',
     choices: [
-      '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over \\pi\\epsilon_0r }$',
-      '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } - { 1 \\over 2d-r }]$',
-      '${\\bf {E}} { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } + { 1 \\over 2d-r }]$',
-      '${\\bf {E}} { {\\bf {\\hat{r}}} 2 \\rho_\\ell \\over \\pi\\epsilon_0r }$'
+      '${\\bf {E}} = { {\\bf {\\hat{r}}} \\rho_\\ell \\over \\pi\\epsilon_0r }$',
+      '${\\bf {E}} = { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } - { 1 \\over 2d-r }]$',
+      '${\\bf {E}} = { {\\bf {\\hat{r}}} \\rho_\\ell \\over 2\\pi\\epsilon_0 } [{ 1 \\over r } + { 1 \\over 2d-r }]$',
+      '${\\bf {E}} = { {\\bf {\\hat{r}}} 2 \\rho_\\ell \\over \\pi\\epsilon_0r }$'
     ],
     answerIndex: 2,
     explanation: 'ch4/4-23.png'

@@ -3,13 +3,13 @@ var chapterData = [
     number: 1,
     type: 'multiple',
     topic: 'Commutative Vector Operations',
-    question: 'For two vectors <strong>A</strong> and <strong>B</strong>, which one of the following statements is true?',
+    question: 'For two vectors $\\mathrm{\\bf{A}}$ and $\\mathrm{\\bf{B}}$, which one of the following statements is true?',
     questionImg: null,
     choices: [
-      '$A \\cdot B$ is commutative, as is $A \\times B$.',
-      '$A \\cdot B$ is commutative, but $A \\times B$ is not.',
-      '$A \\cdot B$ is not commutative, but $A \\times B$ is.',
-      'Neither $A \\cdot B$ nor $A \\times B$ is commutative.'
+      '$\\mathrm{\\bf{A}} \\cdot \\mathrm{\\bf{B}}$ is commutative, as is $\\mathrm{\\bf{A}} \\times \\mathrm{\\bf{B}}$.',
+      '$\\mathrm{\\bf{A}} \\cdot \\mathrm{\\bf{B}}$ is commutative, but $\\mathrm{\\bf{A}} \\times \\mathrm{\\bf{B}}$ is not.',
+      '$\\mathrm{\\bf{A}} \\cdot \\mathrm{\\bf{B}}$ is not commutative, but $\\mathrm{\\bf{A}} \\times \\mathrm{\\bf{B}}$ is.',
+      'Neither $\\mathrm{\\bf{A}} \\cdot \\mathrm{\\bf{B}}$ nor $\\mathrm{\\bf{A}} \\times \\mathrm{\\bf{B}}$ is commutative.'
     ],
     answerIndex: 1, // choices[1]
     explanation: 'ch3/3-1.png'
@@ -18,13 +18,13 @@ var chapterData = [
     number: 2,
     type: 'multiple',
     topic: 'Cross Product',
-    question: 'For the vector operation <strong>C = A×B</strong>, which one of the following statements is true?',
+    question: 'For the vector operation $\\mathrm{\\bf{C = A \\times B}}$, which one of the following statements is true?',
     questionImg: null,
     choices: [
-      'The direction of $C$ lies in the plane containing $A$ and $B$ and obeys the righthand rule.',
-      'The direction of $C$ lies in the plane containing $A$ and $B$ and obeys the lefthand rule.',
-      'The direction of $C$ is orthogonal to the plane containing $A$ and $B$ and obeys the right-hand rule.',
-      'The direction of $C$ is orthogonal to the plane containing $A$ and $B$ and obeys the left-hand rule.'
+      'The direction of $\\mathrm{\\bf{C}}$ lies in the plane containing $\\mathrm{\\bf{A}}$ and $\\mathrm{\\bf{B}}$ and obeys the righthand rule.',
+      'The direction of $\\mathrm{\\bf{C}}$ lies in the plane containing $\\mathrm{\\bf{A}}$ and $\\mathrm{\\bf{B}}$ and obeys the lefthand rule.',
+      'The direction of $\\mathrm{\\bf{C}}$ is orthogonal to the plane containing $\\mathrm{\\bf{A}}$ and $\\mathrm{\\bf{B}}$ and obeys the right-hand rule.',
+      'The direction of $\\mathrm{\\bf{C}}$ is orthogonal to the plane containing $\\mathrm{\\bf{A}}$ and $\\mathrm{\\bf{B}}$ and obeys the left-hand rule.'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-2.png'
@@ -36,10 +36,10 @@ var chapterData = [
     question: 'Only one of the following four statements is a meaningful product. Which one?',
     questionImg: null,
     choices: [
-      '$A \\cdot (B \\cdot C)$',
-      '$A \\times (B \\cdot C)$',
-      '$A (B \\times C)$',
-      '$A (B \\cdot C)$'
+      '$\\mathrm{\\bf{A} \\cdot (\\bf{B} \\cdot \\bf{C})}$',
+      '$\\mathrm{\\bf{A} \\times (\\bf{B} \\cdot \\bf{C})}$',
+      '$\\mathrm{\\bf{A} (\\bf{B} \\times \\bf{C})}$',
+      '$\\mathrm{\\bf{A} (\\bf{B} \\cdot \\bf{C})}$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-3.png'
@@ -63,7 +63,7 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'Angle between Vectors',
-    question: 'Given vectors ${\\bf {A}} = {\\bf \\hat{x}} 3 − {\\bf \\hat{z}}4 \\mbox{ and } {\\bf {B}} = {\\bf \\hat{z}} 2$, what is the angle qAB between them?',
+    question: 'Given vectors ${\\bf {A}} = {\\bf \\hat{x}} 3 − {\\bf \\hat{z}}4 \\mbox{ and } {\\bf {B}} = {\\bf \\hat{z}} 2$, what is the angle $\\theta_{AB}$ between them?',
     questionImg: null,
     choices: [
       '$\\theta_{AB} = 36.87^\\circ$',
@@ -93,7 +93,7 @@ var chapterData = [
     number: 7,
     type: 'multiple',
     topic: 'Directional Derivative',
-    question: 'For the scalar function $V = x2y−2z2$, determine its directional derivative along the ${\\bf \\hat{z}}$ direction and then evaluate it at $P = (1,2,3)$.',
+    question: 'For the scalar function $V = x^2y − 2z^2$, determine its directional derivative along the ${\\bf \\hat{z}}$ direction and then evaluate it at $P = (1,2,3)$.',
     questionImg: null,
     choices: [
       '$(dV/dl) |_{(1,2,3)} = 8$',
@@ -108,7 +108,7 @@ var chapterData = [
     number: 8,
     type: 'multiple',
     topic: 'Directional Derivative',
-    question: 'For the scalar function $V = 5e^{−2r} sin \\phi$, determine its directional derivative along the ${\\bf \\hat{\\Phi}}$ direction and then evaluate it at $P = (0.5,\\pi/4,2)$.',
+    question: 'For the scalar function $V = 5e^{−2r} \\mbox{sin} \\phi$, determine its directional derivative along the ${\\bf \\hat{\\Phi}}$ direction and then evaluate it at $P = (0.5,\\pi/4,2)$.',
     questionImg: null,
     choices: [
       '$(dV/dl) |_{(0.5,\\pi/4,2)} = 2.6$',
@@ -153,7 +153,7 @@ var chapterData = [
     number: 11,
     type: 'multiple',
     topic: 'Flux Out of a Cube',
-    question: 'Given a vector field ${\\bf {A}} = {\\bf \\hat{x}} x$, determine the amount of flux flowing out of a cube centered at the origin with its sides extending between $−10 \\mbox{ and } +10$ along $x \\mbox{, } y \\mbox{, and } z$.',
+    question: 'Given a vector field ${\\bf {A}} = {\\bf \\hat{x}} xy^2$, determine the amount of flux flowing out of a cube centered at the origin with its sides extending between $−10 \\mbox{ and } +10$ along $x \\mbox{, } y \\mbox{, and } z$.',
     questionImg: 'ch3/3-11.png',
     choices: [
       '$\\oint_S {\\bf {A}} \\cdot d {\\bf {s}} = −2000$',
@@ -216,10 +216,10 @@ var chapterData = [
     question: 'For a vector field ${\\bf {B}}$ defined over a surface $S$ bounded by a contour $C$, Stokes\'s theorem states:',
     questionImg: null,
     choices: [
-      '$\\int_S {\\bf {B}} \\cdot ds = \\oint_C {\\bf {B}} \\cdot d \\ell$',
-      '$\\int_S {\\bf {\\triangledown}} \\cdot ds = \\oint_C {\\bf {B}} \\cdot d \\ell$',
-      '$\\int_S {\\bf {B}} \\cdot ds = \\oint_C ({\\bf {\\triangledown \\times B}}) \\cdot d \\ell$',
-      '$\\int_S ({\\bf {\\triangledown \\times B}}) \\cdot ds = \\oint_C {\\bf {B}} \\cdot d \\ell$'
+      '$\\int_S {\\bf {B}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\boldsymbol{\\ell}$',
+      '$\\int_S {\\bf {\\triangledown}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\boldsymbol{\\ell}$',
+      '$\\int_S {\\bf {B}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C ({\\bf {\\triangledown \\times B}}) \\cdot d \\boldsymbol{\\ell}$',
+      '$\\int_S ({\\bf {\\triangledown \\times B}}) \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\boldsymbol{\\ell}$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-15.png'
@@ -228,13 +228,13 @@ var chapterData = [
     number: 16,
     type: 'multiple',
     topic: 'Divergence',
-    question: 'The phasor equivalent of the time function $\\nu (t) = 10sin(\\omega t +45^\\circ)$ is:',
+    question: 'Compute the divergence of the vector field $${\\bf {A}} = {\\bf \\hat{x}} x^2y - {\\bf \\hat{y}} xy^2.$$',
     questionImg: null,
     choices: [
-      '$\\widetilde{V} = 10e^{−j45^\\circ}$',
-      '$\\widetilde{V} = 10e^{j45^\\circ}$',
-      '$\\widetilde{V} = 10e^{−j135^\\circ}$',
-      '$\\widetilde{V} = 10e^{j135^\\circ}$'
+      '${\\bf {\\triangledown \\cdot A}} = 2xy$',
+      '${\\bf {\\triangledown \\cdot A}} = 4xy$',
+      '${\\bf {\\triangledown \\cdot A}} = 0$',
+      '${\\bf {\\triangledown \\cdot A}} = x^2 - y^2$'
     ],
     answerIndex: 2,
     explanation: 'ch3/3-16.png'

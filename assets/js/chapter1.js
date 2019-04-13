@@ -3,7 +3,7 @@ var chapterData = [
     number: 1,
     type: 'multiple',
     topic: 'Point Charge',
-    question: 'The electric field <strong>E</strong> at a distance $R$ from a negative electric charge:',
+    question: 'The electric field $\\bf{E}$ at a distance $R$ from a negative electric charge:',
     questionImg: null,
     choices: [
       'Decreases in magnitude as $1/R^2$ and points away from the charge.',
@@ -63,7 +63,7 @@ var chapterData = [
     number: 5,
     type: 'multiple',
     topic: 'Acoustic Wave',
-    question: 'A 2.8 kHz acoustic wave travels in water at a speed of 1.4 km/s.What is the wave\'s wavelength?',
+    question: 'A $2.8 \\mbox{ kHz}$ acoustic wave travels in water at a speed of $1.4 \\mbox{ km/s}$.What is the wave\'s wavelength?',
     questionImg: null,
     choices: [
       '$\\lambda = 0.1 \\mbox{ m}$',
@@ -93,7 +93,7 @@ var chapterData = [
     number: 7,
     type: 'multiple',
     topic: 'Time Shift',
-    question: 'If $\\phi =\\pi/4$ and $T = 16s$, what is $\\Delta t$?',
+    question: 'If $\\phi =\\pi/4$ and $T = 16 \\mbox{s}$, what is $\\Delta t$?',
     questionImg: 'ch1/1-7.png',
     choices: [
       '$\\Delta t = 2 \\mbox{ s}$',
@@ -108,8 +108,8 @@ var chapterData = [
     number: 8,
     type: 'multiple',
     topic: 'Traveling Wave',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 3e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
-      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.6 m$?',
+    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 3e^{−0.4x} \\mbox{cos} (4\\pi x) \\mbox{ meters,}$$' +
+      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.6 \\mbox{m} $?',
     questionImg: null,
     choices: [
       '$4 \\mbox{ m}$',
@@ -124,8 +124,8 @@ var chapterData = [
     number: 9,
     type: 'multiple',
     topic: 'Traveling Wave',
-    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 4e^{−0.4x}cos(4\\pi x) \\mbox{ meters,}$$' +
-      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.8 m$?',
+    question: 'The height profile of a water wave created by a wave generator is given by $$y(x) = 4e^{−0.4x} \\mbox{cos} (4\\pi x) \\mbox{ meters,}$$' +
+      'where $x = 0$ is the location of the generator. At what distance is the amplitude of the wave reduced to $0.8 \\mbox{m} $?',
     questionImg: null,
     choices: [
       '$4 \\mbox{ m}$',
@@ -215,7 +215,7 @@ var chapterData = [
     number: 15,
     type: 'multiple',
     topic: 'Complex Algebra',
-    question: 'Given $z = 2 −0.5 rad$, determine ln ${\\bf z}$.',
+    question: 'Given $z = 2 \\angle −0.5 \\mbox{rad}$, determine ln ${\\bf z}$.',
     questionImg: null,
     choices: [
       'ln ${\\bf z} = −j0.345$',
@@ -230,7 +230,7 @@ var chapterData = [
     number: 16,
     type: 'multiple',
     topic: 'Phasors',
-    question: 'The phasor equivalent of the time function $\\nu (t) = 10sin(\\omega t +45^\\circ)$ is:',
+    question: 'The phasor equivalent of the time function $\\nu (t) = 10 \\mbox{sin} (\\omega t +45^\\circ)$ is:',
     questionImg: null,
     choices: [
       '$\\widetilde{V} = 10e^{−j45^\\circ}$',
@@ -245,7 +245,7 @@ var chapterData = [
     number: 17,
     type: 'multiple',
     topic: 'Phasors',
-    question: 'The phasor equivalent of the time function $\\nu (t) = −4cos(\\omega t −30^\\circ)$ is:',
+    question: 'The phasor equivalent of the time function $\\nu (t) = −4 \\mbox{cos} (\\omega t −30^\\circ)$ is:',
     questionImg: null,
     choices: [
       '$\\widetilde{V} = 4e^{−j150^\\circ}$',
@@ -275,7 +275,7 @@ var chapterData = [
     number: 19,
     type: 'multiple',
     topic: 'Phasors',
-    question: 'For an ac voltage at an angular frequency $\\omega = 377 rad/s$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
+    question: 'For an ac voltage at an angular frequency $\\omega = 377 \\mbox{ rad/s}$, the instantaneous time function corresponding to the phasor $\\widetilde{V} = 3e^{−j30^\\circ}$ is:',
     questionImg: null,
     choices: [
       '$\\nu (t) = 3 \\mathrm{cos} (377t +30^\\circ)$',
@@ -291,7 +291,7 @@ var chapterData = [
     type: 'multiple',
     topic: 'Traveling Wave',
     question: 'The height profile of a water wave created by a wave generator is given by' +
-      '$$y(x) = 6e^{−0.2x} cos(8px) \\mbox{ meters,}$$' +
+      '$$y(x) = 6e^{−0.2x} \\mbox{cos} (8px) \\mbox{ meters,}$$' +
       'What is the wavelength of the wave?',
     questionImg: null,
     choices: [

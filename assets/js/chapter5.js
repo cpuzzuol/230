@@ -25,7 +25,7 @@ var chapterData = [
       '$\\bf{F_m}$ points along $−\\hat{z}$',
       '$\\bf{F_m}$ points along $+\\hat{z}$',
       '${\\bf{F_m}} = 0$',
-      '$\\bf{F_m}$ points along $\\hat{ \\theta }$ direction'
+      '$\\bf{F_m}$ points along $\\boldsymbol{\\hat{ \\theta }}$ direction'
     ],
     answerIndex: 1,
     explanation: 'ch5/5-2.png'
@@ -52,10 +52,10 @@ var chapterData = [
     question: 'What is the direction of the torque acting on the current loop?',
     questionImg: 'ch5/5-4.png',
     choices: [
-      '${ \\bf{T} }$ points in $ \\bf{+\\hat{y}} $ direction$',
-      '${ \\bf{T} }$ points in $ \\bf{-\\hat{y}} $ direction$',
-      '${ \\bf{T} }$ points in $ \\bf{+\\hat{x}} $ direction$',
-      '${ \\bf{T} }$ points in $ \\bf{-\\hat{x}} $ direction$'
+      '${ \\bf{T} }$ points in $ \\bf{+\\hat{y}} $ direction',
+      '${ \\bf{T} }$ points in $ \\bf{-\\hat{y}} $ direction',
+      '${ \\bf{T} }$ points in $ \\bf{+\\hat{x}} $ direction',
+      '${ \\bf{T} }$ points in $ \\bf{-\\hat{x}} $ direction'
     ],
     answerIndex: 0,
     explanation: 'ch5/5-4.png'
@@ -177,7 +177,7 @@ var chapterData = [
     type: 'multiple',
     topic: 'Boundary Conditions',
     question: 'The plane boundary defined by $z = 0$ separates air from a block of iron. If\n' +
-      '${ \\bf{B_1} } = { \\bf{ \\hat{x} } } 2 − { \\bf{ \\hat{y} } } 3 + { \\bf{ \\hat{z} } } 8$ in air $(z \\geq 0)$, find B2 in iron $(z \\leq 0)$, given that $\\mu = 5000 \\mu_0$\n' +
+      '${ \\bf{B_1} } = { \\bf{ \\hat{x} } } 2 − { \\bf{ \\hat{y} } } 3 + { \\bf{ \\hat{z} } } 8$ in air $(z \\geq 0)$, find $\\mathrm{\\bf{B_2}}$ in iron $(z \\leq 0)$, given that $\\mu = 5000 \\mu_0$\n' +
       'for iron.',
     questionImg: null,
     choices: [

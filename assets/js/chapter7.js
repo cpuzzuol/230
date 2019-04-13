@@ -2,7 +2,7 @@ var chapterData = [
   {
     number: 1,
     type: 'multiple',
-    topic: 'TEMWave',
+    topic: 'TEM Wave',
     question: 'A TEM wave propagating from an aircraft overhead towards the ground has its $\\bf{E}$\n' +
       'field pointing eastward. What is the direction of its $\\bf{H}$ field?',
     questionImg: null,
@@ -217,7 +217,7 @@ var chapterData = [
     number: 14,
     type: 'multiple',
     topic: 'Power Density',
-    question: 'A wave traveling in a nonmagnetic medium with er = 9 is characterized by an electric field given by\n<br><br>' +
+    question: 'A wave traveling in a nonmagnetic medium with $\\epsilon_r = 9$ is characterized by an electric field given by\n<br><br>' +
       '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${ \\bf{E} } = [ { \\bf{ \\hat{y} } } 6 \\mathrm{cos} ( \\pi \\times 10^7t + kx) − { \\bf{ \\hat{z} } } 4 \\mathrm{cos} ( \\pi \\times 10^7t + kx )]$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$( \\mathrm{V/m} )$.\n<br><br>' +
       'What is the average power density carried by the wave?',
     questionImg: null,

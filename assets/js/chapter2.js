@@ -8,8 +8,8 @@ var chapterData = [
     choices: [
       '$l/\\lambda > 1$',
       '$l/\\lambda < 0.01$',
-      '$l < 10 m$, regardless of the value of $\\lambda$',
-      '$l < 1 cm$, regardless of the value of $l$'
+      '$l < 10 \\mbox{ m}$, regardless of the value of $\\lambda$',
+      '$l < 1 \\mbox{ cm}$, regardless of the value of $l$'
     ],
     answerIndex: 1, // choices[1]
     explanation: 'ch2/2-1.png'
@@ -93,13 +93,13 @@ var chapterData = [
     number: 7,
     type: 'multiple',
     topic: 'TEM Line',
-    question: 'An air-filled coaxial line with $\\epsilon = \\epsilon_0$ and $\\mu = \\mu_0$ has a line inductance $L^\\prime = (1/27) \\mbox{ }\\mu H/m$. What is the line capacitance $C^\\prime$?',
+    question: 'An air-filled coaxial line with $\\epsilon = \\epsilon_0$ and $\\mu = \\mu_0$ has a line inductance $L^\\prime = (1/27) \\mbox{ }\\mu \\mbox{H/m}$. What is the line capacitance $C^\\prime$?',
     questionImg: null,
     choices: [
-      '$C^\\prime = 0.1 \\mbox{ } nF/m$',
-      '$C^\\prime = 0.3 \\mbox{ } nF/m$',
-      '$C^\\prime = 1 \\mbox{ } nF/m$',
-      '$C^\\prime = 0.3 \\mbox{ } \\mu F/m$'
+      '$C^\\prime = 0.1 \\mbox{ nF/m}$',
+      '$C^\\prime = 0.3 \\mbox{ nF/m}$',
+      '$C^\\prime = 1 \\mbox{ nF/m}$',
+      '$C^\\prime = 0.3 \\mbox{ } \\mu \\mbox{F/m}$'
     ],
     answerIndex: 1,
     explanation: 'ch2/2-7.png'
@@ -243,7 +243,7 @@ var chapterData = [
     number: 17,
     type: 'multiple',
     topic: 'Equivalent Inductor',
-    question: 'A $100 \\mbox{ \\Omega}$ lossless transmission line is terminated in a short circuit. The line is operated at $f = 2 \\mbox{ GHz}$ and the wavelength on the line is $\\lambda = 8$ cm. What should the length of the line be so that its input impedance is equivalent to that of an inductor with $L_{eq} = (25/ \\pi ) \\mbox{ nH}$?',
+    question: 'A $100 \\mbox{ } \\Omega$ lossless transmission line is terminated in a short circuit. The line is operated at $f = 2 \\mbox{ GHz}$ and the wavelength on the line is $\\lambda = 8$ cm. What should the length of the line be so that its input impedance is equivalent to that of an inductor with $L_{eq} = (25/ \\pi ) \\mbox{ nH}$?',
     questionImg: null,
     choices: [
       '$l = 1 \\mbox{ cm}$',
