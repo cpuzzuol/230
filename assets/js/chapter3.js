@@ -216,10 +216,10 @@ var chapterData = [
     question: 'For a vector field ${\\bf {B}}$ defined over a surface $S$ bounded by a contour $C$, Stokes\'s theorem states:',
     questionImg: null,
     choices: [
-      '$\\int_S {\\bf {B}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\boldsymbol{\\ell}$',
-      '$\\int_S {\\bf {\\triangledown}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\boldsymbol{\\ell}$',
-      '$\\int_S {\\bf {B}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C ({\\bf {\\triangledown \\times B}}) \\cdot d \\boldsymbol{\\ell}$',
-      '$\\int_S ({\\bf {\\triangledown \\times B}}) \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\boldsymbol{\\ell}$'
+      '$\\int_S {\\bf {B}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\mathrm{\\bf{l}}$',
+      '$\\int_S {\\bf {\\triangledown}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\mathrm{\\bf{l}}$',
+      '$\\int_S {\\bf {B}} \\cdot d \\mathrm{\\bf{s}} = \\oint_C ({\\bf {\\triangledown \\times B}}) \\cdot d \\mathrm{\\bf{l}}$',
+      '$\\int_S ({\\bf {\\triangledown \\times B}}) \\cdot d \\mathrm{\\bf{s}} = \\oint_C {\\bf {B}} \\cdot d \\mathrm{\\bf{l}}$'
     ],
     answerIndex: 3,
     explanation: 'ch3/3-15.png'
