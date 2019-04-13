@@ -142,10 +142,10 @@ var chapterData = [
       'Find the associated electric field $\\bf{E}$.',
     questionImg: null,
     choices: [
-      '${ \\bf{ \\hat{y} } } 30 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$',
-      '${ \\bf{ -\\hat{z} } } 630 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$',
-      '${ \\bf{ \\hat{z} } } 30 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$',
-      '${ \\bf{ \\hat{x} } } 60 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$'
+      '${ \\bf{E} } = { \\bf{ \\hat{y} } } 30 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$',
+      '${ \\bf{E} } = { \\bf{ -\\hat{z} } } 630 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$',
+      '${ \\bf{E} } = { \\bf{ \\hat{z} } } 30 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$',
+      '${ \\bf{E} } = { \\bf{ \\hat{x} } } 60 \\mathrm{cos} (2 \\pi \\times 10^7t + 0.2 \\pi y) \\mbox{ } ( \\mathrm{V/m} )$'
     ],
     answerIndex: 1,
     explanation: 'ch6/6-9.png'

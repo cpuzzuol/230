@@ -291,7 +291,7 @@ var chapterData = [
     type: 'multiple',
     topic: 'Traveling Wave',
     question: 'The height profile of a water wave created by a wave generator is given by' +
-      '$$y(x) = 6e^{−0.2x} \\mbox{cos} (8px) \\mbox{ meters,}$$' +
+      '$$y(x) = 6e^{−0.2x} \\mbox{cos} (8 \\pi x) \\mbox{ meters,}$$' +
       'What is the wavelength of the wave?',
     questionImg: null,
     choices: [
