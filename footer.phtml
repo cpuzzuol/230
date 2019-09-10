@@ -46,7 +46,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
 
   <!-- VUETIFY JS -->
-  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.16/vuetify.js"></script>
   <script src="assets/js/main.js"></script>
   <script type="text/x-template" id="question-template">
     <v-layout app>
@@ -327,11 +328,15 @@
   </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<!--  <script>-->
-<!--    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
-<!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')-->
-<!--  </script>-->
-<!--  <script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43220622-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43220622-7');
+</script>
+
 </body>
 
 </html>
